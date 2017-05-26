@@ -67,7 +67,7 @@ body, html {
     <a href="#historia" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-home"></i>HISTORIA </a>
     <a href="#lugTuristico" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i>CENTROS TURISTICOS</a>
     <a href="#costumbres" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i>COSTUMBRES</a>
-    <a href="#contacto" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i>CONTACTO</a>
+    <a href="#ubicacion" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i>UBICACION</a>
   </div>
 
   <!-- Navbar on small screens -->
@@ -75,7 +75,7 @@ body, html {
     <a href="#historia" class="w3-bar-item w3-button" onclick="toggleFunction()">HISTORIA</a>
     <a href="#lugTuristico" class="w3-bar-item w3-button" onclick="toggleFunction()">CENTROS TURISTICOS</a>
     <a href="#costumbres" class="w3-bar-item w3-button" onclick="toggleFunction()">COSTUMBRES</a>
-    <a href="#contacto" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACTO</a>
+    <a href="#ubicacion" class="w3-bar-item w3-button" onclick="toggleFunction()">UBICACION</a>
     
   </div>
 </div>
@@ -180,34 +180,7 @@ body, html {
   		
 	</div>
 
-	<script>
-		var slideIndex = 1;
-		showDivs(slideIndex);
-
-		function plusDivs(n) {
-	  showDivs(slideIndex += n);
-		}
-
-		function currentDiv(n) {
- 		showDivs(slideIndex = n);
-		}
-
-		function showDivs(n) {
-	 	var i;
-  		var x = document.getElementsByClassName("mySlides");
-  		var dots = document.getElementsByClassName("demo");
-  		if (n > x.length) {slideIndex = 1}    
-  		if (n < 1) {slideIndex = x.length}
-  		for (i = 0; i < x.length; i++) {
-     	x[i].style.display = "none";  
-  		}
-  		for (i = 0; i < dots.length; i++) {
-     	dots[i].className = dots[i].className.replace(" w3-red", "");
-  		}
-  		x[slideIndex-1].style.display = "block";  
-  		dots[slideIndex-1].className += " w3-red";
-		}
-		</script>
+	
     </div>
 
     <!-- Hide this text on small devices -->
@@ -295,7 +268,7 @@ body, html {
 
 <!-- container (costumbres) -->
 <div class="w3-content w3-container w3-padding-64" id="costumbres">
-  <h3 class="w3-center">Lugares turisticos de Cajamarca</h3>
+  <h3 class="w3-center">COSTUMBRES DE CAJAMARCA</h3>
   <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
@@ -346,8 +319,8 @@ body, html {
 
 
 <!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contacto">
-  <h3 class="w3-center">WHERE I WORK</h3>
+<div class="w3-content w3-container w3-padding-64" id="ubicacion">
+  <h3 class="w3-center">UBICACION DE CAJAMARCA</h3>
   <p class="w3-center"><em>I'd love your feedback!</em></p>
 
   <div class="w3-row w3-padding-32 w3-section">
@@ -358,24 +331,20 @@ body, html {
     <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">
         <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Cajamarca<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+        <p><em>Datos Generales de Cajamarca</em></p>
+      	<ul class="w3-ul w3-hoverable">
+    		<li  class="w3-justify">ubicado al norte del territorio peruano, en la cadena occidental de los Andes y abarca zonas de sierra y selva</li>
+    		<li class="w3-justify">Limita por el norte con Ecuador, por el sur con La Libertad, por el este con Amazonas y por el oeste con Piura y Lambayeque</li>
+    		<li class="w3-justify">Tiene 13 provincias y 126 distritos</li>
+    		<li class="w3-justify">Tiene una superficie de 35,417 kilometros cuadrados</li>
+    		<li class="w3-justify">La ciudad de Cajamarca, capital de departamento, se encuentra a una altitud de 2,750 msnm</li>
+    		<li class="w3-justify">Tiene un clima templado, seco y soleado. Durante el día mantiene una temperatua promedio de 14º, con una temperatura maxima de 21º y 6º centigrados de temperatura minima</li>
+    		<li class="w3-justify">La activiad economica mas importante son la ganadería, la agricultura y la mineria </li>
+    		
+ 	 	</ul>
+        
       </div>
-      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-          </div>
-        </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </form>
+      
     </div>
   </div>
 </div>
@@ -440,6 +409,34 @@ function myMap() {
 	  infowindow.open(map,marker);
 	}
 </script>
+<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+	  showDivs(slideIndex += n);
+		}
+
+		function currentDiv(n) {
+ 		showDivs(slideIndex = n);
+		}
+
+		function showDivs(n) {
+	 	var i;
+  		var x = document.getElementsByClassName("mySlides");
+  		var dots = document.getElementsByClassName("demo");
+  		if (n > x.length) {slideIndex = 1}    
+  		if (n < 1) {slideIndex = x.length}
+  		for (i = 0; i < x.length; i++) {
+     	x[i].style.display = "none";  
+  		}
+  		for (i = 0; i < dots.length; i++) {
+     	dots[i].className = dots[i].className.replace(" w3-red", "");
+  		}
+  		x[slideIndex-1].style.display = "block";  
+  		dots[slideIndex-1].className += " w3-red";
+		}
+		</script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC45iE_7ge0KLvrrdlxHUt0zjLUiQKne7E&callback=myMap "></script>
 
 </body>
