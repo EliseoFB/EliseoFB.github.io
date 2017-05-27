@@ -11,7 +11,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
     height: 100%;
     color: black;
-    line-height: 1.8;
+    line-height: 2;
 }
 
 /* Create a Parallax Effect */
@@ -83,7 +83,7 @@ body, html {
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="Inicio">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-small w3-black w3-xlarge w3-wide w3-animate-opacity w3-center w3-animate-zoom" style="width:100%"><i class="fa fa-spinner w3-spin" style="font-size:35px"></i>BIENVENIDOS A CAJAMARCA <span class="w3-hide-small"></span>
+    <span class="w3-center w3-padding-small w3-black w3-xlarge w3-wide w3-animate-opacity w3-center w3-animate-zoom" ><i class="fa fa-spinner w3-spin" style="font-size:35px"></i>BIENVENIDOS A CAJAMARCA <span class="w3-hide-small"></span>
   </div>
 </div>
 
@@ -189,37 +189,40 @@ body, html {
       <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">
       
-      <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Tabbed Modal</button>
+      <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-cyan w3-center">José Galvez Egúsquiza</button>
 
 <div id="id01" class="w3-modal">
  <div class="w3-modal-content w3-card-4 w3-animate-zoom">
   <header class="w3-container w3-blue"> 
    <span onclick="document.getElementById('id01').style.display='none'" 
    class="w3-button w3-blue w3-xlarge w3-display-topright">&times;</span>
-   <h2>Header</h2>
+   <h2>JOSÉ GALVEZ EGÚSQUIZA</h2>
   </header>
 
   <div class="w3-bar w3-border-bottom">
-   <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'London')">London</button>
-   <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Paris')">Paris</button>
-   <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+   <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'foto')">Fotografía</button>
+   <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'biografia')">Biografía</button>
+   <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'hechos')">Hechos</button>
   </div>
 
-  <div id="London" class="w3-container city">
-   <h1>London</h1>
-   <p>London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <div id="foto" class="w3-container city">
+   <h1></h1>
+	<img src="/img/homjosegalvez.jpg" style="width:20%">
+		   
   </div>
 
-  <div id="Paris" class="w3-container city">
-   <h1>Paris</h1>
-   <p>Paris is the capital of France.</p>
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <div id="biografia" class="w3-container city">
+   <h1></h1>
+   <p class="w3-justify">Nacio en cajamarca en 1819 y murio en el Callao el 2 de mayo de 1866. Esudio en el colegio de
+   ciencias de Cajamarca, obtuvo su titulo de abogado en 1845 y el año siguiente se caso con Ángela Moreno.</p>
+   
   </div>
 
-  <div id="Tokyo" class="w3-container city">
-   <h1>Tokyo</h1>
-   <p>Tokyo is the capital of Japan.</p><br>
+  <div id="hechos" class="w3-container city">
+   <h1></h1>
+   <p class="w3-justify">Descata como líder en la Convención Constituyente de 1856.
+   Fue secretario de la guerra, por la cual el 2 de mayo de 1866 fue victima por la escuadra enemiga, en la Torre de Merced.
+   El gobierno dio un decreto en el cual se consigna."Muerto heroicamente en defensa de su patria y el honos de América."</p><br>
   </div>
 
   <div class="w3-container w3-light-grey w3-padding">
@@ -379,7 +382,7 @@ body, html {
 </div>
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-32 w3-opacity w3-hover-opacity-off">
+<footer class="w3-center w3-black w3-padding-32  w3-hover-opacity-off">
   <a href="#Inicio" class=" w3-round w3-green" style="padding:6px"><i class=" w3-green w3-border w3-border-white"></i>IR AL INICIO</a>
   <div class="w3-xlarge w3-section">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -392,7 +395,6 @@ body, html {
   <p>Eliseo Fustamante Blanco &copy; 2017</p>
 </footer>
  
-<!-- Add Google Maps -->
 <script>
 
 // Modal Image Gallery
@@ -424,6 +426,8 @@ function toggleFunction() {
     }
 }
 
+
+<!-- Sctip de mapa de google maps  -->
 function myMap() {
 	  var myCenter = new google.maps.LatLng(-7.1637800,-78.5002700);
 	  var mapCanvas = document.getElementById("map");
@@ -438,6 +442,10 @@ function myMap() {
 	  infowindow.open(map,marker);
 	}
 </script>
+
+
+
+<!-- Sctip de slideshow -->
 <script>
 		var slideIndex = 1;
 		showDivs(slideIndex);
