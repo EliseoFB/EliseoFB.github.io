@@ -190,20 +190,41 @@ body, html {
     		<button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">José Gabriel Gálvez Egúsquiza</button>
 
  			 <div id="id01" class="w3-modal">
-   				 <div class="w3-modal-content">
-     				 <div class="w3-container">
-        				<span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-        				<img src="/img/homjosegalvez.jpg" style="width:20%">
-        				  <p class="w3-justify"><em>Nació en Cajamarca en 1819 y murió en el Callao el 2 de mayo de 1866. Estudió en el Colegio de Ciencias de Cajamarca y en 1836 comenzó a trabajar en una hacienda familiar. Recién en 1842 puede ir a estudiar a Lima e ingresa como pensionado en el Colegio de San Carlos, bajo la dirección de Bartolomé Herrera. Obtuvo su título de abogado en 1845 y al año siguiente se casó con Ángela Moreno y Maíz. Por la familia de su esposa se fueron a vivir varios años a Tarma.
-        				  En 1850 regresa a Lima y enseña en el colegio Guadalupe, que representaba el espíritu democrático y cuyo rector era su hermano Pedro, quien había polemizado con Bartolomé Herrera, rector de San Carlos, que representaba el espíritu aristocrático. Dos años después, José asume el rectorado del colegio, imprimiéndole al liberalismo un mayor sentido social. Dejó el cargo para incorporarse al movimiento cívico militar de 1854 que encabezaba Ramón Castilla. La inspiración doctrinaria liberal, que alienta los primeros decretos de éste se plasma en la abolición del tributo indígena y de la esclavitud.
-        				  Gálvez destaca como líder en la Convención Constituyente de 1856. Como sintetiza Jorge Guillermo Leguía: “La Convención era la reforma del pasado, y Gálvez la anticipación del porvenir. La Convención era ansia de igualdad para todos los peruanos, y Gálvez la sed de la fraternidad para todos los hombres. La Convención era la República, y Gálvez la anunciación del Socialismo”. La Convención abolió la pena de muerte, estableció el derecho de insurrección frente a los usurpadores, se abolieron los fueros, etcétera.
-						Cuando se produjo la guerra con España, volvió José Gálvez al combate. Fue secretario de Guerra y el 2 de mayo de 1866, en el Callao, en la torre de La Merced, fue victimado por la escuadra enemiga. El gobierno dio un decreto en el cual se consignaba: “Muerto heroicamente en defensa de su Patria y del honor de América”. Sus restos yacen en la Cripta de los Héroes.
-				       				          				  
-        				  </em></p><br>
-        				
-    				 </div>
-    				</div>
-  				</div>
+ <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+  <header class="w3-container w3-blue"> 
+   <span onclick="document.getElementById('id01').style.display='none'" 
+   class="w3-button w3-blue w3-xlarge w3-display-topright">&times;</span>
+   <h2>JOSE GALVEZ EGUSQIUZA</h2>
+  </header>
+
+  <div class="w3-bar w3-border-bottom">
+   <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Foto')">FOTO</button>
+   <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Biografia')">BIOGRAFIA</button>
+   <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Hechos')">HECHOS</button>
+  </div>
+
+  <div id="Foto" class="w3-container city">
+   <h1>FOTO</h1>
+   <img src="/img/homjosegalvez.jpg" style="width:40%">
+  </div>
+
+  <div id="Biografia" class="w3-container city">
+   <h1>BIOGRAFIA</h1>
+   <p>Paris is the capital of France.</p>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+
+  <div id="Hechos" class="w3-container city">
+   <h1>Tokyo</h1>
+   <p>Tokyo is the capital of Japan.</p><br>
+  </div>
+
+  <div class="w3-container w3-light-grey w3-padding">
+   <button class="w3-btn w3-right w3-white w3-border" 
+   onclick="document.getElementById('id01').style.display='none'">Cerrar</button>
+  </div>
+ </div>
+</div>
     		
  	 	</ul>
     		
@@ -443,6 +464,25 @@ function myMap() {
   		dots[slideIndex-1].className += " w3-red";
 		}
 		</script>
+		
+		<script>
+		document.getElementsByClassName("tablink")[0].click();
+
+			function openCity(evt, cityName) {
+			  var i, x, tablinks;
+ 				 x = document.getElementsByClassName("city");
+  				for (i = 0; i < x.length; i++) {
+  				  x[i].style.display = "none";
+ 					 }
+  				tablinks = document.getElementsByClassName("tablink");
+  				for (i = 0; i < x.length; i++) {
+   					tablinks[i].classList.remove("w3-light-grey");
+ 					 }
+ 				 document.getElementById(cityName).style.display = "block";
+  				evt.currentTarget.classList.add("w3-light-grey");
+					}
+				</script>
+ 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC45iE_7ge0KLvrrdlxHUt0zjLUiQKne7E&callback=myMap "></script>
 
 </body>
