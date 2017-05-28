@@ -1,614 +1,774 @@
 <!DOCTYPE html>
 <html>
 <title>Mi Cajamarca</title>
-<meta charset="UTF-8"> 
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, h1, h2, h3, h4, h5, h6 {
+	font-family: "Lato", sans-serif;
+}
+
 body, html {
-    height: 100%;
-    color: black;
-    line-height: 2;
+	height: 100%;
+	color: black;
+	line-height: 2;
 }
 
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url("/img/cajamarcainicio.jpg");
-    min-height: 100%;
+	background-image: url("/img/cajamarcainicio.jpg");
+	min-height: 100%;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-    background-image: url("/img/turprincipal.jpg");
-    min-height: 400px;
+	background-image: url("/img/turprincipal.jpg");
+	min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-    background-image: url("/img/cajcostprincipal.jpg");
-    min-height: 400px;
+	background-image: url("/img/cajcostprincipal.jpg");
+	min-height: 400px;
 }
 /* fourt image (Contact) */
 .bgimg-4 {
-    background-image: url("/img/cajamarca3.jpg");
-    min-height: 400px;
+	background-image: url("/img/cajamarca3.jpg");
+	min-height: 400px;
 }
 
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
+.w3-wide {
+	letter-spacing: 10px;
+}
+
+.w3-hover-opacity {
+	cursor: pointer;
+}
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
-        background-attachment: scroll;
-    }
+	.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+		background-attachment: scroll;
+	}
 }
 </style>
 <body>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-white w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="#Inicio" class="w3-bar-item w3-button">INICIO</a>
-    <a href="#historia" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-home"></i>HISTORIA </a>
-    <a href="#lugTuristico" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i>CENTROS TURISTICOS</a>
-    <a href="#costumbres" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i>COSTUMBRES</a>
-    <a href="#ubicacion" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i>UBICACION</a>
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#historia" class="w3-bar-item w3-button" onclick="toggleFunction()">HISTORIA</a>
-    <a href="#lugTuristico" class="w3-bar-item w3-button" onclick="toggleFunction()">CENTROS TURISTICOS</a>
-    <a href="#costumbres" class="w3-bar-item w3-button" onclick="toggleFunction()">COSTUMBRES</a>
-    <a href="#ubicacion" class="w3-bar-item w3-button" onclick="toggleFunction()">UBICACION</a>
-    
-  </div>
-</div>
-
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="Inicio">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-small w3-black w3-xlarge w3-wide w3-animate-opacity w3-center w3-animate-zoom" ><i class="fa fa-spinner w3-spin" style="font-size:35px"></i>BIENVENIDOS A CAJAMARCA <span class="w3-hide-small"></span>
-  </div>
-</div>
-
-<!-- Contenedor sobre historia -->
-<div class="w3-content w3-container w3-padding-64" id="historia">
-  <h3 class="w3-center ">HISTORIA DE CAJAMARCA</h3>
-  <p class="w3-center "><em>Reseña historica de Cajamarca</em></p>
- 
-  <p class="w3-justify">El origen de la ciudad de Cajamarca se inicia aproximadamente hace 3 mil años atras con los primeros grupos humanos Huacaloma, Layzon, Cumbe ayo y Otuzco.
-  Alcanzo su mayor desarrollo entre los años 500 y 1000 de nuestra era como centro poblado de la cultura Casamarca.   En el año de 1450 el gobierno de Inca Pachacutec, su hermano Capac Yupanqui conquista la region anexandola al tahuantinsuyo. En 1532 la ciudad de cajamarca fue 
-  escenario de uno de los acontecimientos mas trascendentes de la historia universal.  La captura del Inca Atahualpa por un grupo de españoles al mando de Francisco Pizarro
-  produciendose el encuentro de dos mundos, el orgen del mestizaje y una nueva epoca en la historia del Perú.  En el luga donde hoy se leventa la plaza de armas de Cajamarca, en el año de 1532 el marqués Francisco Pizarro 
-  capturo al Inca Atahualpa, que habia rehusado someterse a la Corona Española y a la fe cristiana.  A cambio de su liberación, el inca ofreció llenar un recinto con otro, y dos veces con plata. Se dice que el 
-  volumen del rescate fue tal, que la fundición de los metales duro mas de treinta días. A pesar de ello, nueve meses despues de su captura los 
-  conquistadores condenaron al Inca a la pena del Garrote.  A partir de entonces, los españoles se asentaron en la ciudad y adaptaron su trazado incaico al diseño en cuadricula o en damero. 
-  La ciudad de Cajamarca se constituye como capital del departamente del mismo nombe por Decreto Supremo dado por el Mariscal Ramón Castilla el 11 de 
-  febrero de 1855.
-  </p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-   	 	<div class="w3-container">
- 		 <h2>IMAGENES DE LA HISTORIA DE CAJAMARCA</h2>
- 		 <p>Recordar es volver a vivir</p>
-		</div>
-    	  <div class="w3-content" style="max-width:800px">
-    	  <div class="w3-display-container mySlides">
-  		<img src="/img/caj1532.jpg" style="width:100%">
-  		<div class="w3-display-topleft w3-small w3-container w3-padding-16 w3-black">
-  			 Plaza de armas cajamarca 1532
- 		 </div>
-		</div>
-		<div class="w3-display-container mySlides">
-  		<img src="/img/caj1800.jpg" style="width:100%">
-  		<div class="w3-display-topleft w3-small w3-container w3-padding-16 w3-black">
-  			  Plaza de aramas Cajamarca 1800
- 		 </div>
-		</div>
-		<div class="w3-display-container mySlides">
-  		<img src="/img/caj1870.jpg" style="width:100%">
-  		<div class="w3-display-topleft w3-small w3-container w3-padding-16 w3-black">
-  			  Vista panoramica de Cajamarca 1870
- 		 </div>
-		</div>
-		<div class="w3-display-container mySlides">
-  		<img src="/img/caj1887.jpg" style="width:100%">
-  		<div class="w3-display-topleft w3-small w3-container w3-padding-16 w3-black">
-  			  Iglesia San Franciso 1887 
- 		 </div>
-		</div>
-		<div class="w3-display-container mySlides">
-  		<img src="/img/caj1920.jpg" style="width:100%">
-  		<div class="w3-display-topleft w3-small w3-container w3-padding-16 w3-black">
-  			  Plaza de armas Cajamarca 1920 
- 		 </div>
-		</div>
-		<div class="w3-display-container mySlides">
-  		<img src="/img/caj1930.jpg" style="width:100%">
-  		<div class="w3-display-topleft w3-small w3-container w3-padding-16 w3-black">
-  			  Plaza de armas Cajamarca 1930
- 		 </div>
-		</div>
-    	  <div class="w3-display-container mySlides">
-  		<img src="/img/caja1943.jpg" style="width:100%">
-  		<div class="w3-display-topleft w3-small w3-container w3-padding-16 w3-black">
-  			  Vista area de cajamarca 1943
- 		 </div>
-		</div>
-		<div class="w3-display-container mySlides">
-  		<img src="/img/caj1950.jpg" style="width:100%">
-  		<div class="w3-display-topleft w3-small w3-container w3-padding-16 w3-black">
-  			  Escalinatas Santa Apolonia 1950
- 		 </div>
-		</div>
-		<div class="w3-display-container mySlides">
-  		<img src="/img/caj1960.jpg" style="width:100%">
-  		<div class="w3-display-topleft w3-small w3-container w3-padding-16 w3-black">
-  			  Vista Santa Apolonia 1960
- 		 </div>
-		</div>
-		<div class="w3-display-container mySlides">
-  		<img src="/img/caja2016.jpg" style="width:100%">
-  		<div class="w3-display-topleft w3-small w3-container w3-padding-16 w3-black">
-  			  Vista de Cajamarca 2016
- 		 </div>
-		</div>
-    	    		 	
+	<!-- Navbar (sit on top) -->
+	<div class="w3-top">
+		<div class="w3-bar" id="myNavbar">
+			<a
+				class="w3-bar-item w3-button w3-hover-white w3-hide-medium w3-hide-large w3-right"
+				href="javascript:void(0);" onclick="toggleFunction()"
+				title="Toggle Navigation Menu"> <i class="fa fa-bars"></i>
+			</a> <a href="#Inicio" class="w3-bar-item w3-button">INICIO</a> <a
+				href="#historia" class="w3-bar-item w3-button w3-hide-small"><i
+				class="fa fa-home"></i>HISTORIA </a> <a href="#lugTuristico"
+				class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i>CENTROS
+				TURISTICOS</a> <a href="#costumbres"
+				class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i>COSTUMBRES</a>
+			<a href="#ubicacion" class="w3-bar-item w3-button w3-hide-small"><i
+				class="fa fa-envelope"></i>UBICACION</a>
 		</div>
 
-	<div class="w3-center">
-  	<div class="w3-section">
-    	<button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Anterior</button>
-   	 <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Siguiente❯</button>
-  	</div>
-  		
+		<!-- Navbar on small screens -->
+		<div id="navDemo"
+			class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+			<a href="#historia" class="w3-bar-item w3-button"
+				onclick="toggleFunction()">HISTORIA</a> <a href="#lugTuristico"
+				class="w3-bar-item w3-button" onclick="toggleFunction()">CENTROS
+				TURISTICOS</a> <a href="#costumbres" class="w3-bar-item w3-button"
+				onclick="toggleFunction()">COSTUMBRES</a> <a href="#ubicacion"
+				class="w3-bar-item w3-button" onclick="toggleFunction()">UBICACION</a>
+
+		</div>
 	</div>
-	
-    </div>
 
-    <!-- Utilizacion de modal con tablas -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p><h3 class="w3-center">PERSONAJES ILUSTRES DE CAJAMARCA</h3>
-      <ul class="w3-ul w3-hoverable">
-    		<li class="w3-justify">José Gabriel Egúsquiza</li>
-    		   <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black"><em><strong>LEER MÁS >></strong></em></button>
-
-<div id="id01" class="w3-modal">
- <div class="w3-modal-content w3-card-4 w3-animate-zoom">
-  <header class="w3-container w3-black"> 
-   <span onclick="document.getElementById('id01').style.display='none'" 
-   class="w3-button w3-black w3-xlarge w3-display-topright w3-center">&times;</span>
-   <h2>JOSÉ GALVEZ EGÚSQUIZA</h2>
-  </header>
-
-  <div class="w3-bar w3-border-bottom">
-   <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'foto')">Fotografía</button>
-   <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'biografia')">Biografía</button>
-   <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'hechos')">Hechos</button>
-  </div>
-
-  <div id="foto" class="w3-container city">
-   <h1></h1>
-	<img src="/img/homjosegalvez.jpg" style="width:20%">
-		   
-  </div>
-
-  <div id="biografia" class="w3-container city">
-   <h1></h1>
-   <p class="w3-justify">Nacio en cajamarca en 1819 y murio en el Callao el 2 de mayo de 1866. Esudio en el colegio de
-   ciencias de Cajamarca, obtuvo su titulo de abogado en 1845 y el año siguiente se caso con Ángela Moreno.</p>
-   
-  </div>
-
-  <div id="hechos" class="w3-container city">
-   <h1></h1>
-   <p class="w3-justify">Descata como líder en la Convención Constituyente de 1856.
-   Fue secretario de la guerra, por la cual el 2 de mayo de 1866 fue victima por la escuadra enemiga, en la Torre de Merced.
-   El gobierno dio un decreto en el cual se consigna."Muerto heroicamente en defensa de su patria y el honos de América."</p><br>
-  </div>
-
-  <div class="w3-container w3-light-grey w3-padding">
-   <button class="w3-btn w3-right w3-white w3-border" 
-   onclick="document.getElementById('id01').style.display='none'">Cerrar</button>
-  </div>
- </div>
-</div>   	
-    	<li class="w3-justify">Horacio Urteaga </li>
-    		<button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-black "><em><strong>LEER MÁS >></strong></em></button>
-
-<div id="id02" class="w3-modal">
- <div class="w3-modal-content w3-card-4 w3-animate-zoom">
-  <header class="w3-container w3-black"> 
-   <span onclick="document.getElementById('id02').style.display='none'" 
-   class="w3-button w3-black w3-xlarge w3-display-topright w3-center">&times;</span>
-   <h2>HORACIO URTEAGA</h2>
-  </header>
-
-  <div class="w3-bar w3-border-bottom">
-   <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'foto1')">Fotografía</button>
-   <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'biografia1')">Biografía</button>
-   <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'hechos1')">Hechos</button>
-  </div>
-
-  <div id="foto1" class="w3-container city">
-   <h1></h1>
-	<img src="/img/homhoraciour.jpg" style="width:20%">
-		   
-  </div>
-
-  <div id="biografia1" class="w3-container city">
-   <h1></h1>
-   <p class="w3-justify">El historiador Horacio Urteaga nació en la ciudad de Cajamarca en 1877. Estando aún en el colegio, escribió dos dramas que fueron escenificados por sus compañeros.
-   Estudio en la Universidad de San Marcos, donde obtuvo los grados de bachiller en Jurisprudencia y doctoe en letras. Luego recibio el de abogado en 1904. Fallecio en Lima en 1952.</p>
-   
-  </div>
-
-  <div id="hechos1" class="w3-container city">
-   <h1></h1>
-   <p class="w3-justify">Entre sus principales obras destacan Fundación española del Cusco, el imperio incaico, historia de la civilizacion (3 tomos), Colección de libros y documentos referentes a la hisotira del Perú</p><br>
-  </div>
-
-  <div class="w3-container w3-light-grey w3-padding">
-   <button class="w3-btn w3-right w3-white w3-border" 
-   onclick="document.getElementById('id02').style.display='none'">Cerrar</button>
-  </div>
- </div>
-</div>   	
-    		
-    		
-    		    		<li class="w3-justify">Pedro Coronado Arrascue </li>
-    		    				<button onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-black "><em><strong>LEER MÁS >></strong></em></button>
-
-<div id="id03" class="w3-modal">
- <div class="w3-modal-content w3-card-4 w3-animate-zoom">
-  <header class="w3-container w3-black"> 
-   <span onclick="document.getElementById('id03').style.display='none'" 
-   class="w3-button w3-black w3-xlarge w3-display-topright w3-center">&times;</span>
-   <h2>PEDRO CORONADO ARRASCUE</h2>
-  </header>
-
-  <div class="w3-bar w3-border-bottom">
-   <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'foto2')">Fotografía</button>
-   <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'biografia2')">Biografía</button>
-   <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'hechos2')">Hechos</button>
-  </div>
-
-  <div id="foto2" class="w3-container city">
-   <h1></h1>
-	<img src="/img/hompedrocor.jpg" style="width:20%">
-		   
-  </div>
-
-  <div id="biografia2" class="w3-container city">
-   <h1></h1>
-   <p class="w3-justify">Nació en Chota en 1917. Luego de terminar sus estudios en su tierra, se trasladó a lima e ingresó a la 
-   Universidad de San Marcos.¡, donde estudió  en la Facultad de Ciencias, ejercio la docencia en colecios capitalinos y fue jefe de 
-   practicas de Botánica en la Faculdad de Ciencias de San Marcos.Falleció en Lima en octubre de 1963. </p>
-   
-  </div>
-
-  <div id="hechos2" class="w3-container city">
-   <h1></h1>
-   <p class="w3-justify">Publico texto de estudio, como Botánica, Zoología, EL hombre: su anatomía, fisiología e higiene, Ciencias 
-   de la naturaleza y Ciencias biológicas. En 1961 fue honrado con las Plamas Magistrales.</p><br>
-  </div>
-
-  <div class="w3-container w3-light-grey w3-padding">
-   <button class="w3-btn w3-right w3-white w3-border" 
-   onclick="document.getElementById('id03').style.display='none'">Cerrar</button>
-  </div>
- </div>
-</div>	
-    		  <li class="w3-justify">Mariano Ibérico Rodríguez</li>
-    		  <button onclick="document.getElementById('id04').style.display='block'" class="w3-button w3-black "><em><strong>LEER MÁS >></strong></em></button>
-
-<div id="id04" class="w3-modal">
- <div class="w3-modal-content w3-card-4 w3-animate-zoom">
-  <header class="w3-container w3-black"> 
-   <span onclick="document.getElementById('id04').style.display='none'" 
-   class="w3-button w3-black w3-xlarge w3-display-topright w3-center">&times;</span>
-   <h2>MARIANO IBERICO RODRIGUEZ</h2>
-  </header>
-
-  <div class="w3-bar w3-border-bottom">
-   <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'foto3')">Fotografía</button>
-   <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'biografia3')">Biografía</button>
-   <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'hechos3')">Hechos</button>
-  </div>
-
-  <div id="foto3" class="w3-container city">
-   <h1></h1>
-	<img src="/img/hommarianoib.jpg" style="width:20%">
-		   
-  </div>
-
-  <div id="biografia3" class="w3-container city">
-   <h1>
-   </h1>
-   <p class="w3-justify"> Nació en Cajmarca el 11 de abril de 1892 y murió en Lima el 4 de julio de 1974, según Augusto
-   Salaza Bondy "Fue una de las figuras mas representativas del pensamiento filosofico en el Perú del siglo XX 
-   y sin duda, el pensador que ha logrado con mejor éxito dar un giro original y un sello distintivo a su reflexión.</p>
-   
-  </div>
-
-  <div id="hechos3" class="w3-container city">
-   <h1></h1>
-   <p class="w3-justify">Entre sus obras podemos destacar: El nuevo absoluto(1926), publicada en las revistas La Sierra y Folklore, fue recopilada en Amo y
-   llaga de mi tierra (1944) y postumamente en Poemas y cuentos (1970)</p><br>
-  </div>
-
-  <div class="w3-container w3-light-grey w3-padding">
-   <button class="w3-btn w3-right w3-white w3-border" 
-   onclick="document.getElementById('id04').style.display='none'">Cerrar</button>
-  </div>
- </div>
-</div>	
-    		    		
-    		    		<li class="w3-justify">Fernando Silva Santisteban </li>	
-    		    		<button onclick="document.getElementById('id05').style.display='block'" class="w3-button w3-black "><em><strong>LEER MÁS >></strong></em></button>
-
-<div id="id05" class="w3-modal">
- <div class="w3-modal-content w3-card-4 w3-animate-zoom">
-  <header class="w3-container w3-black"> 
-   <span onclick="document.getElementById('id05').style.display='none'" 
-   class="w3-button w3-black w3-xlarge w3-display-topright w3-center">&times;</span>
-   <h2>FERNANDO SILVA SANTISTEBAN</h2>
-  </header>
-
-  <div class="w3-bar w3-border-bottom">
-   <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'foto4')">Fotografía</button>
-   <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'biografia4')">Biografía</button>
-   <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'hechos4')">Hechos</button>
-  </div>
-
-  <div id="foto4" class="w3-container city">
-   <h1></h1>
-	<img src="/img/homfernandosil.jpg" style="width:20%">
-		   
-  </div>
-
-  <div id="biografia4" class="w3-container city">
-   <h1>
-   </h1>
-   <p class="w3-justify"> Destacado antropologo e historiador nacio en Cajamarca el 10 de febrero de 1929. Estudio en el Centenerio Colegio San Ramon
-   , ingreso a la Universidad de Trujillo, luego estudio en la San Marcos y trabajo en la Biblioteca Nacional(1953-1960).
-   Se doctoro con una tesis sobre los obrajes en el virreinato del Perú(1958). </p>
-   
-  </div>
-
-  <div id="hechos4" class="w3-container city">
-   <h1></h1>
-   <p class="w3-justify">Ha publicado diferentes libros incluyendo texto escolaes, manuales de historia (es notable su Historia del Perú en 3 volumenes. 1982), textos universitarios(Antropologia, cuya primera edición data en
-   1997). Otros Patrimonio monumental de Cajamarca, Historia de Cajamarca.</p><br>
-  </div>
-
-  <div class="w3-container w3-light-grey w3-padding">
-   <button class="w3-btn w3-right w3-white w3-border" 
-   onclick="document.getElementById('id05').style.display='none'">Cerrar</button>
-  </div>
- </div>
-</div>	  		    		
-    		 <li class="w3-justify"> </li>			    				
-    	
- 	 	</ul> 
-    		
-     </div>
-    </div>
-  </div>
-
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">CENTROS TURISTICOS<span class="w3-hide-small"></span>
-  </div>
-</div>
-
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="lugTuristico">
-  <h3 class="w3-center">Lugares turisticos de Cajamarca</h3>
-  <p class="w3-center"><em>Disfrute de los principales centros turisticos de Cajamarca</em></p><br>
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="/img/cajsaturistico1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Cerro Santa Apolonia">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/img/cajsaturistico2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Baños del Inca">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/img/cajsaturistico3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Ventanillas de otuzco">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/img/cajsaturistico4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Canal de Cumbemayo">
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img src="/img/cajsaturistico5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Silla del Inca">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/img/cajsaturistico6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Catarata LLacanora">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/img/cajsaturistico7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Granja Porcon">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/img/cajsaturistico8.jpg "style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Hacienda la Collpa">
-    </div>
-  </div><br>
-   <div class="w3-center w3-hide-small w3-padding-large ">
-      <ul class="w3-ul   w3-hoverable">
-          <a target="_blank" href="centrosturisticos.html" class=" w3-button w3-black"><em><strong> MÁS INFORMACIÓN SOBRE CENTROS TURISTICOS>>></strong></em></a>
-   		   
-    		   
-	</ul>
+	<!-- First Parallax Image with Logo Text -->
+	<div class="bgimg-1 w3-display-container w3-opacity-min" id="Inicio">
+		<div class="w3-display-middle" style="white-space: nowrap;">
+			<span
+				class="w3-center w3-padding-small w3-black w3-xlarge w3-wide w3-animate-opacity w3-center w3-animate-zoom"><i
+				class="fa fa-spinner w3-spin" style="font-size: 35px"></i>BIENVENIDOS
+				A CAJAMARCA <span class="w3-hide-small"></span>
+		</div>
 	</div>
-</div>
 
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-  
-  </div>
-	
-</div>
+	<!-- Contenedor sobre historia -->
+	<div class="w3-content w3-container w3-padding-64" id="historia">
+		<h3 class="w3-center ">HISTORIA DE CAJAMARCA</h3>
+		<p class="w3-center ">
+			<em>Reseña historica de Cajamarca</em>
+		</p>
 
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">COSTUMBRES <span class="w3-hide-small"></span>
-  </div>
-</div>
+		<p class="w3-justify">El origen de la ciudad de Cajamarca se
+			inicia aproximadamente hace 3 mil años atras con los primeros grupos
+			humanos Huacaloma, Layzon, Cumbe ayo y Otuzco. Alcanzo su mayor
+			desarrollo entre los años 500 y 1000 de nuestra era como centro
+			poblado de la cultura Casamarca. En el año de 1450 el gobierno de
+			Inca Pachacutec, su hermano Capac Yupanqui conquista la region
+			anexandola al tahuantinsuyo. En 1532 la ciudad de cajamarca fue
+			escenario de uno de los acontecimientos mas trascendentes de la
+			historia universal. La captura del Inca Atahualpa por un grupo de
+			españoles al mando de Francisco Pizarro produciendose el encuentro de
+			dos mundos, el orgen del mestizaje y una nueva epoca en la historia
+			del Perú. En el luga donde hoy se leventa la plaza de armas de
+			Cajamarca, en el año de 1532 el marqués Francisco Pizarro capturo al
+			Inca Atahualpa, que habia rehusado someterse a la Corona Española y a
+			la fe cristiana. A cambio de su liberación, el inca ofreció llenar un
+			recinto con otro, y dos veces con plata. Se dice que el volumen del
+			rescate fue tal, que la fundición de los metales duro mas de treinta
+			días. A pesar de ello, nueve meses despues de su captura los
+			conquistadores condenaron al Inca a la pena del Garrote. A partir de
+			entonces, los españoles se asentaron en la ciudad y adaptaron su
+			trazado incaico al diseño en cuadricula o en damero. La ciudad de
+			Cajamarca se constituye como capital del departamente del mismo nombe
+			por Decreto Supremo dado por el Mariscal Ramón Castilla el 11 de
+			febrero de 1855.</p>
+		<div class="w3-row">
+			<div class="w3-col m6 w3-center w3-padding-large">
+				<div class="w3-container">
+					<h2>IMAGENES DE LA HISTORIA DE CAJAMARCA</h2>
+					<p>Recordar es volver a vivir</p>
+				</div>
+				<div class="w3-content" style="max-width: 800px">
+					<div class="w3-display-container mySlides">
+						<img src="/img/caj1532.jpg" style="width: 100%">
+						<div
+							class="w3-display-topleft w3-small w3-container w3-padding-16 w3-black">
+							Plaza de armas cajamarca 1532</div>
+					</div>
+					<div class="w3-display-container mySlides">
+						<img src="/img/caj1800.jpg" style="width: 100%">
+						<div
+							class="w3-display-topleft w3-small w3-container w3-padding-16 w3-black">
+							Plaza de aramas Cajamarca 1800</div>
+					</div>
+					<div class="w3-display-container mySlides">
+						<img src="/img/caj1870.jpg" style="width: 100%">
+						<div
+							class="w3-display-topleft w3-small w3-container w3-padding-16 w3-black">
+							Vista panoramica de Cajamarca 1870</div>
+					</div>
+					<div class="w3-display-container mySlides">
+						<img src="/img/caj1887.jpg" style="width: 100%">
+						<div
+							class="w3-display-topleft w3-small w3-container w3-padding-16 w3-black">
+							Iglesia San Franciso 1887</div>
+					</div>
+					<div class="w3-display-container mySlides">
+						<img src="/img/caj1920.jpg" style="width: 100%">
+						<div
+							class="w3-display-topleft w3-small w3-container w3-padding-16 w3-black">
+							Plaza de armas Cajamarca 1920</div>
+					</div>
+					<div class="w3-display-container mySlides">
+						<img src="/img/caj1930.jpg" style="width: 100%">
+						<div
+							class="w3-display-topleft w3-small w3-container w3-padding-16 w3-black">
+							Plaza de armas Cajamarca 1930</div>
+					</div>
+					<div class="w3-display-container mySlides">
+						<img src="/img/caja1943.jpg" style="width: 100%">
+						<div
+							class="w3-display-topleft w3-small w3-container w3-padding-16 w3-black">
+							Vista area de cajamarca 1943</div>
+					</div>
+					<div class="w3-display-container mySlides">
+						<img src="/img/caj1950.jpg" style="width: 100%">
+						<div
+							class="w3-display-topleft w3-small w3-container w3-padding-16 w3-black">
+							Escalinatas Santa Apolonia 1950</div>
+					</div>
+					<div class="w3-display-container mySlides">
+						<img src="/img/caj1960.jpg" style="width: 100%">
+						<div
+							class="w3-display-topleft w3-small w3-container w3-padding-16 w3-black">
+							Vista Santa Apolonia 1960</div>
+					</div>
+					<div class="w3-display-container mySlides">
+						<img src="/img/caja2016.jpg" style="width: 100%">
+						<div
+							class="w3-display-topleft w3-small w3-container w3-padding-16 w3-black">
+							Vista de Cajamarca 2016</div>
+					</div>
 
-<!-- container (costumbres) -->
-<div class="w3-content w3-container w3-padding-64" id="costumbres">
-<div class="w3-container w3-black">
-  <h1>PRINCIPALES COSTUMBRES DE CAJAMARCA</h1>
-</div>
+				</div>
 
-<div class="w3-row-padding w3-margin-top">
-  <div class="w3-third">
-    <div class="w3-card-2">
-      <img src="/img/cajcarte.jpg" style="width:100%">
-      <div class="w3-container">
-        <h5>Artesania de Cajamarca</h5>
-      </div>
-    </div>
-  </div>
+				<div class="w3-center">
+					<div class="w3-section">
+						<button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮
+							Anterior</button>
+						<button class="w3-button w3-light-grey" onclick="plusDivs(1)">Siguiente❯</button>
+					</div>
 
-  <div class="w3-third">
-    <div class="w3-card-2">
-      <img src="/img/cajccarna.jpg" style="width:100%">
-      <div class="w3-container">
-        <h5>Carnaval de Cajamarca</h5>
-      </div>
-    </div>
-  </div>
+				</div>
 
-  <div class="w3-third">
-    <div class="w3-card-2">
-      <img src="/img/cajcgastro.jpg" style="width:100%">
-      <div class="w3-container">
-        <h5>Gastronomia de Cajamarca</h5>
-      </div>
-    </div>
-  </div>
-</div>
+			</div>
 
-<div class="w3-row-padding w3-margin-top">
-  <div class="w3-third">
-    <div class="w3-card-2">
-      <img src="/img/cajcfolk.jpg" style="width:100%">
-      <div class="w3-container">
-        <h5>Folklore de Cajamarca</h5>
-      </div>
-    </div>
-  </div>
+			<!-- Utilizacion de modal con tablas -->
+			<div class="w3-col m6 w3-hide-small w3-padding-large">
+				<p>
+				<h3 class="w3-center">PERSONAJES ILUSTRES DE CAJAMARCA</h3>
+				<ul class="w3-ul w3-hoverable">
+					<li class="w3-justify">José Gabriel Egúsquiza</li>
+					<button
+						onclick="document.getElementById('id01').style.display='block'"
+						class="w3-button w3-black">
+						<em><strong>LEER MÁS >></strong></em>
+					</button>
 
-  <div class="w3-third">
-    <div class="w3-card-2">
-      <img src="/img/cajccorpus.jpg" style="width:100%">
-      <div class="w3-container">
-        <h5>Corpus Cristi Cajamarca</h5>
-      </div>
-    </div>
-  </div>
+					<div id="id01" class="w3-modal">
+						<div class="w3-modal-content w3-card-4 w3-animate-zoom">
+							<header class="w3-container w3-black">
+								<span
+									onclick="document.getElementById('id01').style.display='none'"
+									class="w3-button w3-black w3-xlarge w3-display-topright w3-center">&times;</span>
+								<h2>JOSÉ GALVEZ EGÚSQUIZA</h2>
+							</header>
 
-  <div class="w3-third">
-    <div class="w3-card-2">
-      <img src="/img/cajcdanza.jpg" style="width:100%">
-      <div class="w3-container">
-        <h5>Danzas de Cajamarca</h5>
-      </div>
-    </div>
-  </div> 
-  </div><br>
-  <div class="w3-center w3-hide-small w3-padding-large ">
-      <ul class="w3-ul  w3-hoverable">
-          <a  target="_blank" href="centrosturisticos.html" class=" w3-button w3-black"><em><strong> MÁS INFORMACIÓN SOBRE CENTROS TURISTICOS>></strong></em></a>
-	</ul>
+							<div class="w3-bar w3-border-bottom">
+								<button class="tablink w3-bar-item w3-button"
+									onclick="openCity(event, 'foto')">Fotografía</button>
+								<button class="tablink w3-bar-item w3-button"
+									onclick="openCity(event, 'biografia')">Biografía</button>
+								<button class="tablink w3-bar-item w3-button"
+									onclick="openCity(event, 'hechos')">Hechos</button>
+							</div>
+
+							<div id="foto" class="w3-container city">
+								<h1></h1>
+								<img src="/img/homjosegalvez.jpg" style="width: 20%">
+
+							</div>
+
+							<div id="biografia" class="w3-container city">
+								<h1></h1>
+								<p class="w3-justify">Nacio en cajamarca en 1819 y murio en
+									el Callao el 2 de mayo de 1866. Esudio en el colegio de
+									ciencias de Cajamarca, obtuvo su titulo de abogado en 1845 y el
+									año siguiente se caso con Ángela Moreno.</p>
+
+							</div>
+
+							<div id="hechos" class="w3-container city">
+								<h1></h1>
+								<p class="w3-justify">Descata como líder en la Convención
+									Constituyente de 1856. Fue secretario de la guerra, por la cual
+									el 2 de mayo de 1866 fue victima por la escuadra enemiga, en la
+									Torre de Merced. El gobierno dio un decreto en el cual se
+									consigna."Muerto heroicamente en defensa de su patria y el
+									honos de América."</p>
+								<br>
+							</div>
+
+							<div class="w3-container w3-light-grey w3-padding">
+								<button class="w3-btn w3-right w3-white w3-border"
+									onclick="document.getElementById('id01').style.display='none'">Cerrar</button>
+							</div>
+						</div>
+					</div>
+					<li class="w3-justify">Horacio Urteaga</li>
+					<button
+						onclick="document.getElementById('id02').style.display='block'"
+						class="w3-button w3-black ">
+						<em><strong>LEER MÁS >></strong></em>
+					</button>
+
+					<div id="id02" class="w3-modal">
+						<div class="w3-modal-content w3-card-4 w3-animate-zoom">
+							<header class="w3-container w3-black">
+								<span
+									onclick="document.getElementById('id02').style.display='none'"
+									class="w3-button w3-black w3-xlarge w3-display-topright w3-center">&times;</span>
+								<h2>HORACIO URTEAGA</h2>
+							</header>
+
+							<div class="w3-bar w3-border-bottom">
+								<button class="tablink w3-bar-item w3-button"
+									onclick="openCity(event, 'foto1')">Fotografía</button>
+								<button class="tablink w3-bar-item w3-button"
+									onclick="openCity(event, 'biografia1')">Biografía</button>
+								<button class="tablink w3-bar-item w3-button"
+									onclick="openCity(event, 'hechos1')">Hechos</button>
+							</div>
+
+							<div id="foto1" class="w3-container city">
+								<h1></h1>
+								<img src="/img/homhoraciour.jpg" style="width: 20%">
+
+							</div>
+
+							<div id="biografia1" class="w3-container city">
+								<h1></h1>
+								<p class="w3-justify">El historiador Horacio Urteaga nació
+									en la ciudad de Cajamarca en 1877. Estando aún en el colegio,
+									escribió dos dramas que fueron escenificados por sus
+									compañeros. Estudio en la Universidad de San Marcos, donde
+									obtuvo los grados de bachiller en Jurisprudencia y doctoe en
+									letras. Luego recibio el de abogado en 1904. Fallecio en Lima
+									en 1952.</p>
+
+							</div>
+
+							<div id="hechos1" class="w3-container city">
+								<h1></h1>
+								<p class="w3-justify">Entre sus principales obras destacan
+									Fundación española del Cusco, el imperio incaico, historia de
+									la civilizacion (3 tomos), Colección de libros y documentos
+									referentes a la hisotira del Perú</p>
+								<br>
+							</div>
+
+							<div class="w3-container w3-light-grey w3-padding">
+								<button class="w3-btn w3-right w3-white w3-border"
+									onclick="document.getElementById('id02').style.display='none'">Cerrar</button>
+							</div>
+						</div>
+					</div>
+
+
+					<li class="w3-justify">Pedro Coronado Arrascue</li>
+					<button
+						onclick="document.getElementById('id03').style.display='block'"
+						class="w3-button w3-black ">
+						<em><strong>LEER MÁS >></strong></em>
+					</button>
+
+					<div id="id03" class="w3-modal">
+						<div class="w3-modal-content w3-card-4 w3-animate-zoom">
+							<header class="w3-container w3-black">
+								<span
+									onclick="document.getElementById('id03').style.display='none'"
+									class="w3-button w3-black w3-xlarge w3-display-topright w3-center">&times;</span>
+								<h2>PEDRO CORONADO ARRASCUE</h2>
+							</header>
+
+							<div class="w3-bar w3-border-bottom">
+								<button class="tablink w3-bar-item w3-button"
+									onclick="openCity(event, 'foto2')">Fotografía</button>
+								<button class="tablink w3-bar-item w3-button"
+									onclick="openCity(event, 'biografia2')">Biografía</button>
+								<button class="tablink w3-bar-item w3-button"
+									onclick="openCity(event, 'hechos2')">Hechos</button>
+							</div>
+
+							<div id="foto2" class="w3-container city">
+								<h1></h1>
+								<img src="/img/hompedrocor.jpg" style="width: 20%">
+
+							</div>
+
+							<div id="biografia2" class="w3-container city">
+								<h1></h1>
+								<p class="w3-justify">Nació en Chota en 1917. Luego de
+									terminar sus estudios en su tierra, se trasladó a lima e
+									ingresó a la Universidad de San Marcos.¡, donde estudió en la
+									Facultad de Ciencias, ejercio la docencia en colecios
+									capitalinos y fue jefe de practicas de Botánica en la Faculdad
+									de Ciencias de San Marcos.Falleció en Lima en octubre de 1963.
+								</p>
+
+							</div>
+
+							<div id="hechos2" class="w3-container city">
+								<h1></h1>
+								<p class="w3-justify">Publico texto de estudio, como
+									Botánica, Zoología, EL hombre: su anatomía, fisiología e
+									higiene, Ciencias de la naturaleza y Ciencias biológicas. En
+									1961 fue honrado con las Plamas Magistrales.</p>
+								<br>
+							</div>
+
+							<div class="w3-container w3-light-grey w3-padding">
+								<button class="w3-btn w3-right w3-white w3-border"
+									onclick="document.getElementById('id03').style.display='none'">Cerrar</button>
+							</div>
+						</div>
+					</div>
+					<li class="w3-justify">Mariano Ibérico Rodríguez</li>
+					<button
+						onclick="document.getElementById('id04').style.display='block'"
+						class="w3-button w3-black ">
+						<em><strong>LEER MÁS >></strong></em>
+					</button>
+
+					<div id="id04" class="w3-modal">
+						<div class="w3-modal-content w3-card-4 w3-animate-zoom">
+							<header class="w3-container w3-black">
+								<span
+									onclick="document.getElementById('id04').style.display='none'"
+									class="w3-button w3-black w3-xlarge w3-display-topright w3-center">&times;</span>
+								<h2>MARIANO IBERICO RODRIGUEZ</h2>
+							</header>
+
+							<div class="w3-bar w3-border-bottom">
+								<button class="tablink w3-bar-item w3-button"
+									onclick="openCity(event, 'foto3')">Fotografía</button>
+								<button class="tablink w3-bar-item w3-button"
+									onclick="openCity(event, 'biografia3')">Biografía</button>
+								<button class="tablink w3-bar-item w3-button"
+									onclick="openCity(event, 'hechos3')">Hechos</button>
+							</div>
+
+							<div id="foto3" class="w3-container city">
+								<h1></h1>
+								<img src="/img/hommarianoib.jpg" style="width: 20%">
+
+							</div>
+
+							<div id="biografia3" class="w3-container city">
+								<h1></h1>
+								<p class="w3-justify">Nació en Cajmarca el 11 de abril de
+									1892 y murió en Lima el 4 de julio de 1974, según Augusto
+									Salaza Bondy "Fue una de las figuras mas representativas del
+									pensamiento filosofico en el Perú del siglo XX y sin duda, el
+									pensador que ha logrado con mejor éxito dar un giro original y
+									un sello distintivo a su reflexión.</p>
+
+							</div>
+
+							<div id="hechos3" class="w3-container city">
+								<h1></h1>
+								<p class="w3-justify">Entre sus obras podemos destacar: El
+									nuevo absoluto(1926), publicada en las revistas La Sierra y
+									Folklore, fue recopilada en Amo y llaga de mi tierra (1944) y
+									postumamente en Poemas y cuentos (1970)</p>
+								<br>
+							</div>
+
+							<div class="w3-container w3-light-grey w3-padding">
+								<button class="w3-btn w3-right w3-white w3-border"
+									onclick="document.getElementById('id04').style.display='none'">Cerrar</button>
+							</div>
+						</div>
+					</div>
+
+					<li class="w3-justify">Fernando Silva Santisteban</li>
+					<button
+						onclick="document.getElementById('id05').style.display='block'"
+						class="w3-button w3-black ">
+						<em><strong>LEER MÁS >></strong></em>
+					</button>
+
+					<div id="id05" class="w3-modal">
+						<div class="w3-modal-content w3-card-4 w3-animate-zoom">
+							<header class="w3-container w3-black">
+								<span
+									onclick="document.getElementById('id05').style.display='none'"
+									class="w3-button w3-black w3-xlarge w3-display-topright w3-center">&times;</span>
+								<h2>FERNANDO SILVA SANTISTEBAN</h2>
+							</header>
+
+							<div class="w3-bar w3-border-bottom">
+								<button class="tablink w3-bar-item w3-button"
+									onclick="openCity(event, 'foto4')">Fotografía</button>
+								<button class="tablink w3-bar-item w3-button"
+									onclick="openCity(event, 'biografia4')">Biografía</button>
+								<button class="tablink w3-bar-item w3-button"
+									onclick="openCity(event, 'hechos4')">Hechos</button>
+							</div>
+
+							<div id="foto4" class="w3-container city">
+								<h1></h1>
+								<img src="/img/homfernandosil.jpg" style="width: 20%">
+
+							</div>
+
+							<div id="biografia4" class="w3-container city">
+								<h1></h1>
+								<p class="w3-justify">Destacado antropologo e historiador
+									nacio en Cajamarca el 10 de febrero de 1929. Estudio en el
+									Centenerio Colegio San Ramon , ingreso a la Universidad de
+									Trujillo, luego estudio en la San Marcos y trabajo en la
+									Biblioteca Nacional(1953-1960). Se doctoro con una tesis sobre
+									los obrajes en el virreinato del Perú(1958).</p>
+
+							</div>
+
+							<div id="hechos4" class="w3-container city">
+								<h1></h1>
+								<p class="w3-justify">Ha publicado diferentes libros
+									incluyendo texto escolaes, manuales de historia (es notable su
+									Historia del Perú en 3 volumenes. 1982), textos
+									universitarios(Antropologia, cuya primera edición data en
+									1997). Otros Patrimonio monumental de Cajamarca, Historia de
+									Cajamarca.</p>
+								<br>
+							</div>
+
+							<div class="w3-container w3-light-grey w3-padding">
+								<button class="w3-btn w3-right w3-white w3-border"
+									onclick="document.getElementById('id05').style.display='none'">Cerrar</button>
+							</div>
+						</div>
+					</div>
+					<li class="w3-justify"></li>
+
+				</ul>
+
+			</div>
+		</div>
 	</div>
-  </div>
-	 
+
+	<!-- Second Parallax Image with Portfolio Text -->
+	<div class="bgimg-2 w3-display-container w3-opacity-min">
+		<div class="w3-display-middle" style="white-space: nowrap;">
+			<span
+				class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">CENTROS
+				TURISTICOS<span class="w3-hide-small"></span>
+		</div>
+	</div>
+
+	<!-- Container (Portfolio Section) -->
+	<div class="w3-content w3-container w3-padding-64" id="lugTuristico">
+		<h3 class="w3-center">Lugares turisticos de Cajamarca</h3>
+		<p class="w3-center">
+			<em>Disfrute de los principales centros turisticos de Cajamarca</em>
+		</p>
+		<br>
+
+		<!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+		<div class="w3-row-padding w3-center">
+			<div class="w3-col m3">
+				<img src="/img/cajsaturistico1.jpg" style="width: 100%"
+					onclick="onClick(this)" class="w3-hover-opacity"
+					alt="Cerro Santa Apolonia">
+			</div>
+
+			<div class="w3-col m3">
+				<img src="/img/cajsaturistico2.jpg" style="width: 100%"
+					onclick="onClick(this)" class="w3-hover-opacity"
+					alt="Baños del Inca">
+			</div>
+
+			<div class="w3-col m3">
+				<img src="/img/cajsaturistico3.jpg" style="width: 100%"
+					onclick="onClick(this)" class="w3-hover-opacity"
+					alt="Ventanillas de otuzco">
+			</div>
+
+			<div class="w3-col m3">
+				<img src="/img/cajsaturistico4.jpg" style="width: 100%"
+					onclick="onClick(this)" class="w3-hover-opacity"
+					alt="Canal de Cumbemayo">
+			</div>
+		</div>
+
+		<div class="w3-row-padding w3-center w3-section">
+			<div class="w3-col m3">
+				<img src="/img/cajsaturistico5.jpg" style="width: 100%"
+					onclick="onClick(this)" class="w3-hover-opacity"
+					alt="Silla del Inca">
+			</div>
+
+			<div class="w3-col m3">
+				<img src="/img/cajsaturistico6.jpg" style="width: 100%"
+					onclick="onClick(this)" class="w3-hover-opacity"
+					alt="Catarata LLacanora">
+			</div>
+
+			<div class="w3-col m3">
+				<img src="/img/cajsaturistico7.jpg" style="width: 100%"
+					onclick="onClick(this)" class="w3-hover-opacity"
+					alt="Granja Porcon">
+			</div>
+
+			<div class="w3-col m3">
+				<img src="/img/cajsaturistico8.jpg " style="width: 100%"
+					onclick="onClick(this)" class="w3-hover-opacity"
+					alt="Hacienda la Collpa">
+			</div>
+		</div>
+		<br>
+		<div class="w3-center w3-hide-small w3-padding-large ">
+			<ul class="w3-ul   w3-hoverable">
+				<a target="_blank" href="centrosturisticos.html"
+					class=" w3-button w3-black"><em><strong> MÁS
+							INFORMACIÓN SOBRE CENTROS TURISTICOS>>></strong></em></a>
 
 
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-4 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">UBICACION<span class="w3-hide-small"></span>
-  </div>
-</div>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Modal for full size images on click-->
+	<div id="modal01" class="w3-modal w3-black"
+		onclick="this.style.display='none'">
+		<span class="w3-button w3-large w3-black w3-display-topright"
+			title="Close Modal Image"><i class="fa fa-remove"></i></span>
+		<div
+			class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+			<img id="img01" class="w3-image">
+			<p id="caption" class="w3-opacity w3-large"></p>
+		</div>
+
+	</div>
+
+	</div>
+
+	<!-- Third Parallax Image with Portfolio Text -->
+	<div class="bgimg-3 w3-display-container w3-opacity-min">
+		<div class="w3-display-middle" style="white-space: nowrap;">
+			<span
+				class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">COSTUMBRES
+				<span class="w3-hide-small"></span>
+		</div>
+	</div>
+
+	<!-- container (costumbres) -->
+	<div class="w3-content w3-container w3-padding-64" id="costumbres">
+		<div class="w3-container w3-black">
+			<h1>PRINCIPALES COSTUMBRES DE CAJAMARCA</h1>
+		</div>
+
+		<div class="w3-row-padding w3-margin-top">
+			<div class="w3-third">
+				<div class="w3-card-2">
+					<img src="/img/cajcarte.jpg" style="width: 100%">
+					<div class="w3-container">
+						<h5>Artesania de Cajamarca</h5>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-third">
+				<div class="w3-card-2">
+					<img src="/img/cajccarna.jpg" style="width: 100%">
+					<div class="w3-container">
+						<h5>Carnaval de Cajamarca</h5>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-third">
+				<div class="w3-card-2">
+					<img src="/img/cajcgastro.jpg" style="width: 100%">
+					<div class="w3-container">
+						<h5>Gastronomia de Cajamarca</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="w3-row-padding w3-margin-top">
+			<div class="w3-third">
+				<div class="w3-card-2">
+					<img src="/img/cajcfolk.jpg" style="width: 100%">
+					<div class="w3-container">
+						<h5>Folklore de Cajamarca</h5>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-third">
+				<div class="w3-card-2">
+					<img src="/img/cajccorpus.jpg" style="width: 100%">
+					<div class="w3-container">
+						<h5>Corpus Cristi Cajamarca</h5>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-third">
+				<div class="w3-card-2">
+					<img src="/img/cajcdanza.jpg" style="width: 100%">
+					<div class="w3-container">
+						<h5>Danzas de Cajamarca</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="w3-center w3-hide-small w3-padding-large ">
+			<ul class="w3-ul  w3-hoverable">
+				<a target="_blank" href="centrosturisticos.html"
+					class=" w3-button w3-black"><em><strong> MÁS
+							INFORMACIÓN SOBRE CENTROS TURISTICOS>></strong></em></a>
+			</ul>
+		</div>
+	</div>
 
 
 
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="ubicacion">
-  <h3 class="w3-center">UBICACION DE CAJAMARCA</h3>
+	<!-- Third Parallax Image with Portfolio Text -->
+	<div class="bgimg-4 w3-display-container w3-opacity-min">
+		<div class="w3-display-middle" style="white-space: nowrap;">
+			<span
+				class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">UBICACION<span
+				class="w3-hide-small"></span>
+		</div>
+	</div>
 
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <!-- Add Google Maps -->
-      <div id="map" class="w3-round-xlarge " style="width:100%;height:450px;"></div>
-    </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-      	<ul class="w3-ul w3-hoverable">
-    		<li class="w3-justify">Limita por el norte con Ecuador, por el sur con La Libertad, por el este con Amazonas y por el oeste con Piura y Lambayeque</li>
-    		<li class="w3-justify">Tiene 13 provincias y 126 distritos con una superfice de 35,417 k. cuadrados</li>
-    		<li class="w3-justify">La ciudad de Cajamarca, capital de departamento, se encuentra a una altitud de 2,750 msnm</li>
-    		<li class="w3-justify">Tiene un clima templado, seco y soleado. Durante el día mantiene una temperatua promedio de 14º, con una temperatura maxima de 21º y 6º centigrados de temperatura minima</li>
-    		<li class="w3-justify">La activiad economica mas importante son la ganadería, la agricultura y la mineria </li>
-    		
- 	 	</ul>
-        
-      </div>
-      
-    </div>
-  </div>
-</div>
 
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-16  w3-hover-opacity-off">
-  <a href="#Inicio" class=" w3-round w3-black" style="padding:6px">IR AL INICIO</a>
-  <div class="w3-xlarge w3-section">
-  	<a target="_blank" href="https://www.facebook.com/municaj" class="fa fa-facebook-official w3-hover-opacity"></a>
-    <a target="_blank" href="https://twitter.com/MuniCajamarca_" class="fa fa-twitter w3-hover-opacity"></a>
-    <a target="_blank" href="https://www.youtube.com/channel/UCXeLpZHAhOaKVix5fKK0u2A" class="fa fa-youtube w3-hover-opacity"></a>   
-    <a target="_blank" href="https://vimeo.com/search?q=cajamarca" class="fa fa-vimeo-square w3-hover-opacity"></a>   
-    
-  </div>
-  <p>Eliseo Fustamante Blanco &copy; 2017</p>
-</footer>
- 
-<script>
+
+	<!-- Container (Contact Section) -->
+	<div class="w3-content w3-container w3-padding-64" id="ubicacion">
+		<h3 class="w3-center">UBICACION DE CAJAMARCA</h3>
+
+		<div class="w3-row w3-padding-32 w3-section">
+			<div class="w3-col m4 w3-container">
+				<!-- Add Google Maps -->
+				<div id="map" class="w3-round-xlarge "
+					style="width: 100%; height: 450px;"></div>
+			</div>
+			<div class="w3-col m8 w3-panel">
+				<div class="w3-large w3-margin-bottom">
+					<ul class="w3-ul w3-hoverable">
+						<li class="w3-justify">Limita por el norte con Ecuador, por
+							el sur con La Libertad, por el este con Amazonas y por el oeste
+							con Piura y Lambayeque</li>
+						<li class="w3-justify">Tiene 13 provincias y 126 distritos
+							con una superfice de 35,417 k. cuadrados</li>
+						<li class="w3-justify">La ciudad de Cajamarca, capital de
+							departamento, se encuentra a una altitud de 2,750 msnm</li>
+						<li class="w3-justify">Tiene un clima templado, seco y
+							soleado. Durante el día mantiene una temperatua promedio de 14º,
+							con una temperatura maxima de 21º y 6º centigrados de temperatura
+							minima</li>
+						<li class="w3-justify">La activiad economica mas importante
+							son la ganadería, la agricultura y la mineria</li>
+
+					</ul>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="w3-center w3-black w3-padding-16  w3-hover-opacity-off">
+		<a href="#Inicio" class=" w3-round w3-black" style="padding: 6px">IR
+			AL INICIO</a>
+		<div class="w3-xlarge w3-section">
+			<a target="_blank" href="https://www.facebook.com/municaj"
+				class="fa fa-facebook-official w3-hover-opacity"></a> <a
+				target="_blank" href="https://twitter.com/MuniCajamarca_"
+				class="fa fa-twitter w3-hover-opacity"></a> <a target="_blank"
+				href="https://www.youtube.com/channel/UCXeLpZHAhOaKVix5fKK0u2A"
+				class="fa fa-youtube w3-hover-opacity"></a> <a target="_blank"
+				href="https://vimeo.com/search?q=cajamarca"
+				class="fa fa-vimeo-square w3-hover-opacity"></a>
+
+		</div>
+		<p>Eliseo Fustamante Blanco &copy; 2017</p>
+	</footer>
+
+	<script>
 
 // Modal Image Gallery
 function onClick(element) {
@@ -658,8 +818,8 @@ function myMap() {
 
 
 
-<!-- Sctip de slideshow -->
-<script>
+	<!-- Sctip de slideshow -->
+	<script>
 		var slideIndex = 1;
 		showDivs(slideIndex);
 
@@ -687,11 +847,11 @@ function myMap() {
   		dots[slideIndex-1].className += " w3-red";
 		}
 		</script>
-		
-		
-		
-		<!-- Script de model con tablas -->
-		<script>
+
+
+
+	<!-- Script de model con tablas -->
+	<script>
 		document.getElementsByClassName("tablink")[0].click();
 
 			function openCity(evt, cityName) {
@@ -708,8 +868,9 @@ function myMap() {
   				evt.currentTarget.classList.add("w3-light-grey");
 					}
 				</script>
- 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC45iE_7ge0KLvrrdlxHUt0zjLUiQKne7E&callback=myMap "></script>
+
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC45iE_7ge0KLvrrdlxHUt0zjLUiQKne7E&callback=myMap "></script>
 
 </body>
 </html>
