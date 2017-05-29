@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <title>Actividades de Cajamarca</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
 
-<!-- nav con W3 CSS -->
-<div class="w3-sidebar w3-light-grey w3-black w3-bar-block" style="width:25%">
+<!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Cerrar &times;</button>
   <h3 class="w3-bar-item">Provincias</h3>
   <a href="#inicio" class="w3-bar-item w3-button">Region de cajamarca</a>
   <a href="#chota" class="w3-bar-item w3-button">Chota</a>
@@ -22,31 +24,40 @@
   <a href="#sanmiguel" class="w3-bar-item w3-button">San Miguel</a>
   <a href="#sanpablo" class="w3-bar-item w3-button">San Pablo</a>
   <a href="#santacruz" class="w3-bar-item w3-button">Santa Cruz</a>
-  
 </div>
 
 <!-- Page Content -->
-<div style="margin-left:25%">
-
-<div class="w3-container w3-teal">
-  <h1>My Page</h1>
+<div class="w3-teal">
+  <button class="w3-button w3-black w3-xlarge" onclick="w3_open()">☰</button>
+  <div class="w3-container">
+    <h1>Actividades de Cajamarca</h1>
+  </div>
 </div>
 
 <img src="img_car.jpg" alt="Car" style="width:100%">
 
-<div class="w3-container">
-<h2>Sidebar Navigation Example</h2>
-<p>The sidebar with is set with "style="width:25%".</p>
-<p>The left margin of the page content is set to the same value.</p>
+<div class="w3-container "id="inicio">
+<p>This sidebar is hidden by default, (style="display:none")</p>
+<p>You must click on the "hamburger" icon (top left) to open it.</p>
+<p>The sidebar will hide a part of the page content.</p>
 </div>
 
-</div>
 
 <!-- Footer -->
 	<footer class="w3-center w3-black w3-padding-16  w3-hover-opacity-off">
 			
 		<p>Eliseo Fustamante Blanco &copy; 2017</p>
 	</footer>
-      
+
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+     
 </body>
-</html>
+</html> 
+
