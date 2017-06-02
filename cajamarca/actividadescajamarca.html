@@ -21,10 +21,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
   <div class="w3-container w3-row">
-    <div class="w3-col s4">
-      <img src="/img/pagecostumbres/cajcostprincipal.jpg" class="w3-circle w3-margin-right" style="width:46px">
-    </div>
-    <div class="w3-col s8 w3-bar">
+      <div class="w3-col s8 w3-bar">
       <span>BIENVENIDOS A , <strong>CAJAMARA</strong></span><br>
       
     </div>
@@ -36,6 +33,13 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <div class="w3-bar-block">
     <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>&nbsp; Cerrar menu</a>
     <a href="/index.html" class="w3-bar-item w3-button w3-padding w3-blue"> Principal</a>
+    <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-black w3-left-align">
+	Chota</button>
+	<div id="Demo1" class="w3-hide">
+  		<a class="w3-button w3-block w3-left-align" href="#">Agricultura</a>
+  		<a class="w3-button w3-block w3-left-align" href="#">Ganaderia</a>
+  		<a class="w3-button w3-block w3-left-align" href="#">Transporte</a>
+	</div>
     <a href="#" class="w3-bar-item w3-button w3-padding"> Chota</a>
     <a href="#" class="w3-bar-item w3-button w3-padding"> Cajamarca</a>
     <a href="#" class="w3-bar-item w3-button w3-padding"> Celendin</a>
@@ -297,6 +301,17 @@ function w3_open() {
 function w3_close() {
     mySidebar.style.display = "none";
     overlayBg.style.display = "none";
+}
+</script>
+
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
 }
 </script>
 
