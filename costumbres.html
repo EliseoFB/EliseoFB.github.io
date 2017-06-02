@@ -4,35 +4,27 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-body {
-	font-family: "Times New Roman", Georgia, Serif;
-}
+<link rel="stylesheet" href="css/stylecostum.css">
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: "Playfair Display";
-	letter-spacing: 5px;
-}
-</style>
 <body>
-
-	<!-- Navbar (sit on top) -->
+<!-- Navbar (sit on top) -->
 	<div class="w3-top">
-		<div class="w3-bar w3-black w3-padding w3-card-2 w3-center"
-			style="letter-spacing: 4px;">
-			<!-- Right-sided navbar links. Hide them on small screens -->
-			<div class="w3-right w3-hide-small w3-center">
+		<div class="w3-bar w3-bar w3-card-2 w3-animate-top w3-black" id="myNavbar">
+			<a
+				class="w3-bar-item w3-button w3-white w3-hide-medium w3-hide-xlarge w3-right"
+				href="javascript:void(0);" onclick="toggleFunction()"
+				title="Desplegar"> <i class="fa fa-bars"></i>
+				</a> 
+				<a href="/index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>PRINCIPAL</a> 
 				<a href="#artesania" class="w3-bar-item w3-button">ARTESANIA</a> 
-				<a href="#carnaval" class="w3-bar-item w3-button">CARNAVAL</a>
-				<a href="#gastronomia" class="w3-bar-item w3-button">GASTRONOMIA</a> 
-				<a href="#folklore" class="w3-bar-item w3-button">FOLKLORE</a>
-				<a href="#corpus" class="w3-bar-item w3-button">CORPUS CHRISTI</a> 
-				<a href="#danzas" class="w3-bar-item w3-button">DANZAS</a>
-				
-			</div>
+				<a href="#carnaval" class="w3-bar-item w3-button w3-hide-small">CARNAVEL</a>
+				<a href="#gastronimia" class="w3-bar-item w3-button w3-hide-small">GASTRONIMIA</a>
+				<a href="#folklore"class="w3-bar-item w3-button w3-hide-small">FOLKLORE</a>
+				<a href="#corpus"class="w3-bar-item w3-button w3-hide-small">CORPUS CHRISTI</a>
+				<a href="#danzas" class="w3-bar-item w3-button w3-hide-small">DANZAS</a>
 		</div>
 	</div>
-
+		
 	<!-- Header -->
 	<header class="w3-display-container w3-content w3-wide"
 		style="max-width: 1600px; min-width: 500px" id="">
@@ -230,6 +222,39 @@ h1, h2, h3, h4, h5, h6 {
 			
 		<p>Eliseo Fustamante Blanco &copy; 2017</p>
 	</footer>
+	
+		<script>
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
 
 </body>
 </html>
