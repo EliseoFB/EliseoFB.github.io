@@ -1,59 +1,58 @@
 <!DOCTYPE html>
 <html>
-<title>Centros Turisticos</title>
+<title>Centros turisticos</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/styletours.css">
 
+
 <body>
-	<!-- Navbar (sit on top) -->
-	<div class="w3-top">
-		<div class="w3-bar w3-bar w3-card-2 w3-animate-top w3-black" id="myNavbar">
-			<a
-				class="w3-bar-item w3-button w3-white w3-hide-medium w3-hide-xlarge w3-right"
-				href="javascript:void(0);" onclick="toggleFunction()"
-				title="Desplegar"> <i class="fa fa-bars"></i>
-				</a> 
-				<a href="/index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>PRINCIPAL</a> 
-				<a href="#santa" class="w3-bar-item w3-button">SANTA APOLONIA</a> 
-				<a href="#baños" class="w3-bar-item w3-button w3-hide-small">BAÑOS DEL INCA</a>
-				<a href="#ventanillas" class="w3-bar-item w3-button w3-hide-small">VENTANILLAS DE OTUZCO</a>
-				<a href="#canal"class="w3-bar-item w3-button w3-hide-small">CUMBEMAYO</a>
-				<a href="#silla"class="w3-bar-item w3-button w3-hide-small">SILLA DEL INCA</a>
-				<a href="#catarata" class="w3-bar-item w3-button w3-hide-small">CATARATA</a>
-				<a href="#granja" class="w3-bar-item w3-button w3-hide-small">GRANJA PORCON</a>
-				<a href="#hacienda" class="w3-bar-item w3-button w3-hide-small">LA COLLPA</a>
-		</div>
 
-		<!-- Navbar on small screens -->
-		<div id="navDemo"
-			class="w3-bar-white w3-black w3-hide w3-hide-large w3-hide-medium">
-			<a href="/index.html" class="w3-bar-item w3-button" 	onclick="toggleFunction()">PRINCIPAL</a> 
-			<a href="#santa" class="w3-bar-item w3-button" 	onclick="toggleFunction()">SANTA APOLONIA</a> 
-			<a href="#baños" class="w3-bar-item w3-button" onclick="toggleFunction()">BAÑOS DEL INCA</a> 
-			<a href="#ventanillas" class="w3-bar-item w3-button"	onclick="toggleFunction()">VENTANILLAS DE OTUZCO</a>
-			<a href="#canal" class="w3-bar-item w3-button" onclick="toggleFunction()">CUMBEMAYO</a>
-			<a href="#silla" class="w3-bar-item w3-button" onclick="toggleFunction()">SILLA DEL INCA</a>
-			<a href="#catarata" class="w3-bar-item w3-button" onclick="toggleFunction()">CATARATA </a>
-			<a href="#granja" class="w3-bar-item w3-button" onclick="toggleFunction()">GRANJA PORCON</a>
-			<a href="#hacienda" class="w3-bar-item w3-button" onclick="toggleFunction()">LA COLLPA</a>
-			
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card-2 w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="/index.html" class="w3-bar-item w3-button w3-padding-large w3-white">PRINCIPAL</a>
+    <a href="#santa" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">SANTA APOLONIA</a>
+    <a href="#baños" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">BAÑOS DEL INCA</a>
+    <a href="#ventanillas" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">VENTANILLAS DE OTUZCO</a>
+    <a href="#canal" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">CUMBEMAYO</a>
+    <a href="#silla" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">SILLA DEL INCA</a>
+    <a href="#catarata" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">CATARATA</a>
+    <a href="#granja" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">GRANJA PORCON</a>
+    <a href="#hacienda" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">LA COLLPA</a>
+    
+    
+  </div>
 
-		</div>
-	</div>
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#santa" class="w3-bar-item w3-button w3-padding-large">SANTA APOLONIA</a>
+    <a href="#baños" class="w3-bar-item w3-button w3-padding-large">BAÑOS DEL INCA</a>
+    <a href="#ventanillas" class="w3-bar-item w3-button w3-padding-large">VENTANILLAS DE OTUZCO</a>
+    <a href="#canal" class="w3-bar-item w3-button w3-padding-large">CUMBEMAYO</a>
+    <a href="#silla" class="w3-bar-item w3-button w3-padding-large">SILLA DEL INCA</a>
+    <a href="#catarata" class="w3-bar-item w3-button w3-padding-large">CATARATA</a>
+    <a href="#granja" class="w3-bar-item w3-button w3-padding-large">GRANJA PORCON</a>
+    <a href="#hacienda" class="w3-bar-item w3-button w3-padding-large">LA COLLPA</a>
+            
+  </div>
+</div>
 
-
-	<!-- Header -->
-	<header class="w3-display-container w3-content w3-wide"
-		style="max-width: 1600px; min-width: 500px" id="">
-		<img class="w3-image" src="/img/turprincipal.jpg"
-			alt="Hamburger Catering" width="1600" height="500">
+<!-- Header -->
+<header class="w3-container w3-black w3-center" style="padding:50px 10px">
+  <img class="w3-image" src="/img/turprincipal.jpg"
+			alt="Hamburger Catering" width="1200" height="500">
 		<div class="w3-display-bottomleft w3-padding-large w3-black">
 			<h1 class="w3-xxlarge">CAJAMARCA-PERÚ</h1>
 		</div>
-	</header>
-		<div class="w3-row w3-padding-64" id="santa">
+</header>
+
+<div class="w3-row w3-padding-64" id="santa">
 			<div class="w3-col m6 w3-padding-large w3-hide-small">
 				<img src="/img/pagcentros/santa.jpg"
 					class="w3-round w3-image w3-opacity-min" alt="Table Setting"
@@ -300,35 +299,13 @@
 		<p>Eliseo Fustamante Blanco &copy; 2017</p>
 	</footer>
 	
-	
-	<script>
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
-    }
-}
-
+<script>
 // Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
+function myFunction() {
     var x = document.getElementById("navDemo");
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
-    } else {
+    } else { 
         x.className = x.className.replace(" w3-show", "");
     }
 }
