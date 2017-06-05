@@ -89,6 +89,8 @@
 				<img src="/img/pageactividades/pchota.jpg"
 					class="w3-round w3-image w3-opacity-min" alt="Table Setting"
 					width="600" height="750">
+					<img id="icono1" src="/img/pageactividades/pchota.jpg" alt="imagen de chota"/>
+					<button onclick="changeimage();" > Clik Aqui...</button>
 			</div>
 
 			<div class="w3-col m6 w3-padding-large">
@@ -852,6 +854,15 @@ function myFunction(id) {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+</script>
+
+<script>
+	function changeimage()
+	{
+		var chotaimg=document.getElementById("icono1");
+		chotaimg.ser="/img/pageactividades/agriculturacho.jpg";
+		
+	}
 </script>
 
 </body>
