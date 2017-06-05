@@ -1,7 +1,7 @@
 
 function pageload() {
 	var img = document.getElementById("img");
-	img.onclick = changeimg;
+	img.onclick = changeimage;
 }
 function changeimage() {
 	var webimg = document.getElementById("icono1");
