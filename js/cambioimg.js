@@ -5,7 +5,7 @@ function pageload() {
 }
 function changeimage() {
 	var webimg = document.getElementById("icono1");
-	webimg.src = "/img/js.png";
+	webimg.src = "img/js.png";
 
 }
 window.onload = pageload;
