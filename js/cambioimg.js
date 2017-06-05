@@ -1,4 +1,4 @@
-
+"use strict";
 function pageload() {
 	var img = document.getElementById("img");
 	img.onclick = changeimage;
@@ -8,4 +8,4 @@ function changeimage() {
 	webimg.src = "img/js.png";
 
 }
-window.onload = pageload;
+window.onload = pageload; 
