@@ -55,28 +55,24 @@ body, html {
 		background-attachment: scroll;
 	}
 }
-.inicio
-{
+
+.inicio {
 	font-size: 35px;
 	white-space: nowrap;
 }
 
-.w3-content
-{
+.w3-content {
 	max-width: 800px;
 }
 
-.img-responsive
-{
+.img-responsive {
 	width: 100%;
 }
 
-
-.w3-container city
-{
+.w3-container city {
 	width: 20%;
 }
-.w3-image
-{
+
+.w3-image {
 	width: 100%;
 }

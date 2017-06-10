@@ -1,40 +1,29 @@
 @CHARSET "UTF-8";
 
-
-html,body,h1,h2,h3,h4,h5
- {font-family: "Raleway", sans-serif}
- 
- #container{
-	z-index:4;
-	
-}
-#mySidebar
-{
-	z-index:3;
-	width:300px;
+html, body, h1, h2, h3, h4, h5 {
+	font-family: "Raleway", sans-serif
 }
 
-#myOverlay
-{
-	cursor:pointer;
-}
-#principal
-{
-	margin-left:200px;
-	margin-top:43px;"
+#container {
+	z-index: 4;
 }
 
-
-
-#main
-{
-	margin-left:20px;
-	margin-top:20px;
+#mySidebar {
+	z-index: 3;
+	width: 300px;
 }
 
+#myOverlay {
+	cursor: pointer;
+}
 
+#principal {
+	margin-left: 200px;
+	margin-top: 43px;
+	"
+}
 
-
-
-
-
+#main {
+	margin-left: 20px;
+	margin-top: 20px;
+}
