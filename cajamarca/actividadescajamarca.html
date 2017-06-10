@@ -14,7 +14,7 @@
 <body class="w3-light-grey">
 
 <!-- Top container -->
-<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+<div class="w3-bar w3-top w3-black w3-large"  id="container" >
   <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i> &nbsp;Menu</button>
   <span class="w3-bar-item w3-right">REGION DE CAJAMARCA</span>
   	<a href="/index.html" class="w3-bar-item w3-button w3-padding w3-white"><i class="material-icons">home</i> Principal</a>
@@ -22,7 +22,7 @@
 </div>
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-collapse w3-black w3-animate-left" style="z-index:3;width:300px;" id="mySidebar">
+<nav class="w3-sidebar w3-collapse w3-black w3-animate-left"  id="mySidebar">
     <div class="w3-container">
     <h5>PROVINCIAS</h5>
   </div>
@@ -32,30 +32,21 @@
     <a class="w3-button w3-block w3-left-align w3-black" href="#cajamarca">Cajamarca</a>
     <a class="w3-button w3-block w3-left-align w3-black" href="#celendin">Celendin</a>
     <a class="w3-button w3-block w3-left-align w3-black" href="#cutervo">Cutervo</a>
-    <a class="w3-button w3-block w3-left-align w3-black" href="#spablo">San Pablo</a>
-    <a class="w3-button w3-block w3-left-align w3-black" href="#smiguel">San Miguel</a>
-    <a class="w3-button w3-block w3-left-align w3-black" href="#smarcos">San Marcos</a>
-    <a class="w3-button w3-block w3-left-align w3-black" href="#hualgayoc">Hualgayoc</a>
-    <a class="w3-button w3-block w3-left-align w3-black" href="#contumaza">Contumaza</a>
-    <a class="w3-button w3-block w3-left-align w3-black" href="#cajabamba">Cajabamba</a>
     <a class="w3-button w3-block w3-left-align w3-black" href="#jaen">Jaen</a>
-    <a class="w3-button w3-block w3-left-align w3-black" href="#signacio">San Ignacio</a>
-    <a class="w3-button w3-block w3-left-align w3-black" href="#scruz">Santa Cruz</a>   
     
   </div>
 </nav>
 
 
 <!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()"  title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+<div class="w3-main" id="main" >
 	<div class="w3-row w3-padding-64" id="Inicio">
 			<div class="w3-col m6 w3-padding-large w3-hide-small">
-				<img src="/img/pageactividades/actividadprincipal.jpg"
-					class="w3-round w3-image w3-opacity-min" alt="actividad principal"
-					width="600" height="750">
+				<img src="/img/pageactividades/actividadprincipal.jpg" id="imgactiv"
+					class="w3-round w3-image w3-opacity-min" alt="actividad principal">
 			</div>
 
 			<div class="w3-col m6 w3-padding-large">
@@ -79,13 +70,13 @@
 			</div>
 		</div>
 
-<div class="w3-main" style="margin-left:20px;margin-top:20px;">
+<div class="w3-main" id="main2">
 
 		<div class="w3-row w3-padding-64" id="chota">
 			<div class="w3-col m6 w3-padding-large w3-hide-small">
-				<img src="/img/pageactividades/pchota.jpg"
+				<img src="/img/pageactividades/pchota.jpg" id="imgchota"
 					class="w3-round w3-image w3-opacity-min" alt="chota"
-					width="600" height="750">
+					>
 					
 			</div>
 
@@ -140,13 +131,13 @@
    </div>
    <hr>
    </div>
-		<div class="w3-main" style="margin-left:20px;margin-top:20px;">
+		<div class="w3-main"  id="main3">
 
 		<div class="w3-row w3-padding-64" id="cajamarca">
 			<div class="w3-col m6 w3-padding-large w3-hide-small">
-				<img src="/img/pageactividades/pcajamarca.jpg"
+				<img src="/img/pageactividades/pcajamarca.jpg" id="imgcaja" 
 					class="w3-round w3-image w3-opacity-min" alt="cajamarca"
-					width="600" height="750">
+					>
 			</div>
 
 			<div class="w3-col m6 w3-padding-large">
@@ -200,13 +191,13 @@
    <hr>
    </div>
  <hr>
- <div class="w3-main" style="margin-left:20px;margin-top:20px;">
+ <div class="w3-main" id="main4" >
 
 		<div class="w3-row w3-padding-64" id="celendin">
 			<div class="w3-col m6 w3-padding-large w3-hide-small">
-				<img src="/img/pageactividades/pcelendin.jpg"
+				<img src="/img/pageactividades/pcelendin.jpg" id="imgcel"
 					class="w3-round w3-image w3-opacity-min" alt="Table Setting"
-					width="600" height="750">
+					>
 			</div>
 
 			<div class="w3-col m6 w3-padding-large">
@@ -260,13 +251,13 @@
    </div>
    <hr>
    </div>
-   <div class="w3-main" style="margin-left:20px;margin-top:20px;">
+   <div class="w3-main" id="main5">
 
 		<div class="w3-row w3-padding-64" id="cutervo">
 			<div class="w3-col m6 w3-padding-large w3-hide-small">
-				<img src="/img/pageactividades/pcutervo.jpg"
+				<img src="/img/pageactividades/pcutervo.jpg" id="imgcuter"
 					class="w3-round w3-image w3-opacity-min" alt="cutervo"
-					width="600" height="750">
+					>
 			</div>
 
 			<div class="w3-col m6 w3-padding-large">
@@ -317,337 +308,14 @@
    </div>
    <hr>
    </div>
-   <div class="w3-main" style="margin-left:20px;margin-top:20px;">
-
-		<div class="w3-row w3-padding-64" id="spablo">
-			<div class="w3-col m6 w3-padding-large w3-hide-small">
-				<img src="/img/pageactividades/pspablo.jpg"
-					class="w3-round w3-image w3-opacity-min" alt="san pablo"
-					width="600" height="750">
-			</div>
-
-			<div class="w3-col m6 w3-padding-large">
-				<h1 class="w3-center">SAN PABLO</h1>
-				<div class="panel-group" id="accordion4">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-         <a data-toggle="collapse" data-parent="#accordion4" href="#collapse13">Agricultura San Pablo</a>
-        </h4>
-      </div>
-      <div id="collapse13" class="panel-collapse collapse in">
-        <div class="panel-body">
-        Insertar texto aqui...
-        </div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion4" href="#collapse14">Ganaderia San Pablo</a>
-        </h4>
-      </div>
-      <div id="collapse14" class="panel-collapse collapse">
-        <div class="panel-body">
-        Insertar texto aqui...
-        </div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion4" href="#collapse15">Industria San Pablo</a>
-        </h4>
-      </div>
-      <div id="collapse15" class="panel-collapse collapse">
-        <div class="panel-body">
-        Insertar texto aqui...
-        </div>
-      </div>
-    </div>
-   </div>
-   </div> 
-   <h1 class="w3-center">VISITA LA PROVINCIA DE SAN PABLO</h1>
-   </div>
-   <hr>
-   </div>
-   <div class="w3-main" style="margin-left:20px;margin-top:20px;">
-
-		<div class="w3-row w3-padding-64" id="smiguel">
-			<div class="w3-col m6 w3-padding-large w3-hide-small">
-				<img src="/img/pageactividades/psmiguel.jpg"
-					class="w3-round w3-image w3-opacity-min" alt="san miguel"
-					width="600" height="750">
-			</div>
-
-			<div class="w3-col m6 w3-padding-large">
-				<h1 class="w3-center">SAN MIGUEL</h1>
-				<div class="panel-group" id="accordion5">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-         <a data-toggle="collapse" data-parent="#accordion5" href="#collapse16">Agricultura San Miguel</a>
-        </h4>
-      </div>
-      <div id="collapse16" class="panel-collapse collapse in">
-        <div class="panel-body">
-        Insertar texto aqui...
-        </div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion5" href="#collapse17">Ganaderia San Miguel</a>
-        </h4>
-      </div>
-      <div id="collapse17" class="panel-collapse collapse">
-        <div class="panel-body">
-        Insertar texto aqui...
-        </div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion5" href="#collapse18">Industria San Miguel</a>
-        </h4>
-      </div>
-      <div id="collapse18" class="panel-collapse collapse">
-        <div class="panel-body">
-        Insertar texto aqui...
-        </div>
-      </div>
-    </div>
-   </div>
-   </div> 
-   <h1 class="w3-center">VISITA LA PROVINCIA DE SAN MIGUEL</h1>
-   </div>
-   <hr>
-   </div>
-   <div class="w3-main" style="margin-left:20px;margin-top:20px;">
-
-		<div class="w3-row w3-padding-64" id="smarcos">
-			<div class="w3-col m6 w3-padding-large w3-hide-small">
-				<img src="/img/pageactividades/psmarcos.jpg"
-					class="w3-round w3-image w3-opacity-min" alt="san marcos"
-					width="600" height="750">
-			</div>
-
-			<div class="w3-col m6 w3-padding-large">
-				<h1 class="w3-center">SAN MARCOS</h1>
-				<div class="panel-group" id="accordion6">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-         <a data-toggle="collapse" data-parent="#accordion6" href="#collapseq19">Agricultura San Marcos</a>
-        </h4>
-      </div>
-      <div id="collapse19" class="panel-collapse collapse in">
-        <div class="panel-body">
-        Insertar texto aqui...
-        </div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion6" href="#collapse20">Ganaderia San Marcos</a>
-        </h4>
-      </div>
-      <div id="collapse20" class="panel-collapse collapse">
-        <div class="panel-body">
-        Insertar texto aqui...
-        </div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion6" href="#collapse21">Industria San Marcos</a>
-        </h4>
-      </div>
-      <div id="collapse21" class="panel-collapse collapse">
-        <div class="panel-body">
-        Insertar texto aqui...
-        </div>
-      </div>
-    </div>
-   </div>
-   </div> 
-   <h1 class="w3-center">VISITA LA PROVINCIA DE SAN MARCOS</h1>
-   </div>
-   <hr>
-   </div>
-   <div class="w3-main" style="margin-left:20px;margin-top:20px;">
-
-		<div class="w3-row w3-padding-64" id="hualgayoc">
-			<div class="w3-col m6 w3-padding-large w3-hide-small">
-				<img src="/img/pageactividades/phualgayoc.jpg"
-					class="w3-round w3-image w3-opacity-min" alt="hualgayoc"
-					width="600" height="750">
-			</div>
-
-			<div class="w3-col m6 w3-padding-large">
-				<h1 class="w3-center">HUALGAYOC</h1>
-				<div class="panel-group" id="accordion7">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-         <a data-toggle="collapse" data-parent="#accordion7" href="#collapse22">Agricultura Hualgayoc</a>
-        </h4>
-      </div>
-      <div id="collapse22" class="panel-collapse collapse in">
-        <div class="panel-body">
-        Insertar texto aqui...
-        </div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion7" href="#collapse23">Ganaderia Hualgayoc</a>
-        </h4>
-      </div>
-      <div id="collapse23" class="panel-collapse collapse">
-        <div class="panel-body">
-        Insertar texto aqui...
-        </div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion7" href="#collapse24">Industria Hualgayoc</a>
-        </h4>
-      </div>
-      <div id="collapse24" class="panel-collapse collapse">
-        <div class="panel-body">
-        Insertar texto aqui...
-        </div>
-      </div>
-    </div>
-   </div>
-   </div> 
-   <h1 class="w3-center">VISITA LA PROVINCIA DE HUALGAYOC</h1>
-   </div>
-   <hr>
-   </div>
-   <div class="w3-main" style="margin-left:20px;margin-top:20px;">
-
-		<div class="w3-row w3-padding-64" id="contumaza">
-			<div class="w3-col m6 w3-padding-large w3-hide-small">
-				<img src="/img/pageactividades/pcontumaza.jpg"
-					class="w3-round w3-image w3-opacity-min" alt="contumaza"
-					width="600" height="750">
-			</div>
-
-			<div class="w3-col m6 w3-padding-large">
-				<h1 class="w3-center">CONTUMAZA</h1>
-				<div class="panel-group" id="accordion8">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-         <a data-toggle="collapse" data-parent="#accordion8" href="#collapse25">Agricultura Contumaza</a>
-        </h4>
-      </div>
-      <div id="collapse25" class="panel-collapse collapse in">
-        <div class="panel-body">
-        Insertar texto aqui...
-        </div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion8" href="#collapse26">Ganaderia Contumaza</a>
-        </h4>
-      </div>
-      <div id="collapse26" class="panel-collapse collapse">
-        <div class="panel-body">
-        Insertar texto aqui...
-        </div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion8" href="#collapse27">Industria Contumaza</a>
-        </h4>
-      </div>
-      <div id="collapse27" class="panel-collapse collapse">
-        <div class="panel-body">
-        Insertar texto aqui...
-        </div>
-      </div>
-    </div>
-   </div>
-   </div> 
-   <h1 class="w3-center">VISITA LA PROVINCIA DE CONTUMAZA</h1>
-   </div>
-   <hr>
-   </div>
-   <div class="w3-main" style="margin-left:20px;margin-top:20px;">
-
-		<div class="w3-row w3-padding-64" id="cajabamba">
-			<div class="w3-col m6 w3-padding-large w3-hide-small">
-				<img src="/img/pageactividades/pcajabamba.jpg"
-					class="w3-round w3-image w3-opacity-min" alt="cajabamba"
-					width="600" height="750">
-			</div>
-
-			<div class="w3-col m6 w3-padding-large">
-				<h1 class="w3-center">CAJABAMBA</h1>
-				<div class="panel-group" id="accordion9">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-         <a data-toggle="collapse" data-parent="#accordion9" href="#collapse28">Agricultura Cajabamba</a>
-        </h4>
-      </div>
-      <div id="collapse28" class="panel-collapse collapse in">
-        <div class="panel-body">
-        Insertar texto aqui...
-        </div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion9" href="#collapse29">Ganaderia Cajabamba</a>
-        </h4>
-      </div>
-      <div id="collapse29" class="panel-collapse collapse">
-        <div class="panel-body">
-        Insertar texto aqui...
-        </div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion9" href="#collapse30">Industria Cajabamba</a>
-        </h4>
-      </div>
-      <div id="collapse30" class="panel-collapse collapse">
-        <div class="panel-body">
-        Insertar texto aqui...
-        </div>
-      </div>
-    </div>
-   </div>
-   </div> 
-   <h1 class="w3-center">VISITA LA PROVINCIA DE CAJABAMBA</h1>
-   </div>
-   <hr>
-   </div>
-   <div class="w3-main" style="margin-left:20px;margin-top:20px;">
+      
+   <div class="w3-main" id="main6">
 
 		<div class="w3-row w3-padding-64" id="jaen">
 			<div class="w3-col m6 w3-padding-large w3-hide-small">
-				<img src="/img/pageactividades/pjaen.jpg"
+				<img src="/img/pageactividades/pjaen.jpg" id="imgjaen"
 					class="w3-round w3-image w3-opacity-min" alt="jaen"
-					width="600" height="750">
+					>
 			</div>
 
 			<div class="w3-col m6 w3-padding-large">
@@ -699,115 +367,7 @@
    </div>
    <hr>
    </div>
-   <div class="w3-main" style="margin-left:20px;margin-top:20px;">
-
-		<div class="w3-row w3-padding-64" id="signacio">
-			<div class="w3-col m6 w3-padding-large w3-hide-small">
-				<img src="/img/pageactividades/psignacio.jpg"
-					class="w3-round w3-image w3-opacity-min" alt="san ignacio"
-					width="600" height="750">
-			</div>
-
-			<div class="w3-col m6 w3-padding-large">
-				<h1 class="w3-center">SAN IGNACIO</h1>
-				<div class="panel-group" id="accordion11">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-         <a data-toggle="collapse" data-parent="#accordion11" href="#collapse34">Agricultura San Ignacio</a>
-        </h4>
-      </div>
-      <div id="collapse34" class="panel-collapse collapse in">
-        <div class="panel-body">
-        Insertar texto aqui...
-        </div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion11" href="#collapse35">Ganaderia San Ignacio</a>
-        </h4>
-      </div>
-      <div id="collapse35" class="panel-collapse collapse">
-        <div class="panel-body">
-        Insertar texto aqui...
-        </div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion11" href="#collapse36">Industria San Ignacio</a>
-        </h4>
-      </div>
-      <div id="collapse36" class="panel-collapse collapse">
-        <div class="panel-body">
-        Insertar texto aqui...
-        </div>
-      </div>
-    </div>
-   </div>
-   </div> 
-   <h1 class="w3-center">VISITA LA PROVINCIA DE SAN IGNACIO</h1>
-   </div>
-   <hr>
-   </div>
-   <div class="w3-main" style="margin-left:20px;margin-top:20px;">
-
-		<div class="w3-row w3-padding-64" id="scruz">
-			<div class="w3-col m6 w3-padding-large w3-hide-small">
-				<img src="/img/pageactividades/pscruz.jpg"
-					class="w3-round w3-image w3-opacity-min" alt="santa cruz"
-					width="600" height="750">
-			</div>
-
-			<div class="w3-col m6 w3-padding-large">
-				<h1 class="w3-center">SANTA CRUZ</h1>
-				<div class="panel-group" id="accordion12">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-         <a data-toggle="collapse" data-parent="#accordion12" href="#collapse37">Agricultura Santa Cruz</a>
-        </h4>
-      </div>
-      <div id="collapse37" class="panel-collapse collapse in">
-        <div class="panel-body">
-        Insertar texto aqui...
-        </div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion12" href="#collapse38">Ganaderia Santa Cruz</a>
-        </h4>
-      </div>
-      <div id="collapse38" class="panel-collapse collapse">
-        <div class="panel-body">
-        Insertar texto aqui...
-        </div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion12" href="#collapse39">Industria Santa Cruz</a>
-        </h4>
-      </div>
-      <div id="collapse39" class="panel-collapse collapse">
-        <div class="panel-body">
-        Insertar texto aqui...
-        </div>
-      </div>
-    </div>
-   </div>
-   </div> 
-   <h1 class="w3-center">VISITA LA PROVINCIA DE SANTA CRUZ</h1>
-   </div>
-   <hr>
-   </div>
-   
+      
 <!-- Footer -->
 	<footer class="w3-center w3-black w3-padding-16  w3-hover-opacity-off">
 			

@@ -3,3 +3,43 @@
 
 html,body,h1,h2,h3,h4,h5
  {font-family: "Raleway", sans-serif}
+ 
+ #container{
+	z-index:4;
+	
+}
+#mySidebar
+{
+	z-index:3;
+	width:300px;
+}
+
+#myOverlay
+{
+	cursor:pointer;
+}
+#main
+{
+	margin-left:300px;
+	margin-top:43px;"
+}
+
+#imgactiv, #imgchota, #imgcaja,#imgcel,#imgcuter,#imgjaen
+{
+	width:600;
+	 height:750;
+}
+
+
+#main2, #main3, #main4,#main5,#main6
+{
+	margin-left:20px;
+	margin-top:20px;
+}
+
+
+
+
+
+
+
