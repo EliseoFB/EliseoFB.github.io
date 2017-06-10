@@ -60,3 +60,13 @@ body, html {
 	font-size: 35px;
 	white-space: nowrap;
 }
+
+.w3-content
+{
+	max-width: 800px;
+}
+
+.img-responsive
+{
+	width: 100%;
+}
