@@ -1,5 +1,5 @@
 function pageload() {
-	var inicio = document.getElementById("navegacion");
+	var inicio = document.getElementById("inicio");
 	inicio.onclick = myFunction;
 }
 function myFunction() {
