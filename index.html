@@ -490,7 +490,7 @@
 		<div class="w3-row-padding w3-center">
 			<div class="w3-col m3">
 				<img src="/img/cajsaturistico1.jpg" 
-					id="img1" class="w3-image w3-hover-opacity" 
+					onclick="onClick(this)" class="w3-image w3-hover-opacity" 
 					alt="Cerro Santa Apolonia">
 			</div>
 
@@ -713,7 +713,12 @@
 	<script>
 
 // Modal Image Gallery
-
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
 
 
 // Change style of navbar on scroll
