@@ -17,3 +17,10 @@ body, h1, h2, h3, h4, h5, h6 {
 	width: 600;
 	height: 750;
 }
+.imgpricipal{
+	width:1200;
+	heigh:500;
+}
+.header{
+	padding:50px 10px;
+}
