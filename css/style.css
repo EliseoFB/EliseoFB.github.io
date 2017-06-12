@@ -72,7 +72,9 @@ body, html {
 .w3-container city {
 	width: 20%;
 }
-
+.w3-image w3-hover-opacity{
+	width: 100%;
+}
 .w3-image {
 	width: 100%;
 }
