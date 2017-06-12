@@ -12,7 +12,6 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <body class="w3-light-grey">
-
 <!-- Top container -->
 <div class="w3-bar w3-top w3-black w3-large"  id="container" >
   <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i> &nbsp;Menu</button>
@@ -21,21 +20,38 @@
   
 </div>
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-collapse w3-black w3-animate-left"  id="mySidebar">
-    <div class="w3-container">
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card-2 w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" id="inicio" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="/index.html" class="w3-bar-item w3-button w3-padding-large w3-white"><i class="material-icons">home</i>PRINCIPAL</a>
+     <div class="w3-container">
+    	<h5>PROVINCIAS</h5>
+  	</div>
+    <a href="#chota" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">CHOTA</a>
+    <a href="#cajamarca" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">CAJAMARCA</a>
+    <a href="#celendin" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">CELENDIN</a>
+    <a href="#cutervo" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">CUTERVO</a>
+    <a href="#jaen" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">JAEN</a>
+      
+  </div>
+
+  <!-- Navbar on small screens -->
+   <div class="w3-container">
     <h5>PROVINCIAS</h5>
   </div>
-  <div class="w3-bar-block">
-    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>&nbsp; Cerrar menu</a>
-    <a class="w3-button w3-block w3-left-align w3-black" href="#chota">Chota</a>
-    <a class="w3-button w3-block w3-left-align w3-black" href="#cajamarca">Cajamarca</a>
-    <a class="w3-button w3-block w3-left-align w3-black" href="#celendin">Celendin</a>
-    <a class="w3-button w3-block w3-left-align w3-black" href="#cutervo">Cutervo</a>
-    <a class="w3-button w3-block w3-left-align w3-black" href="#jaen">Jaen</a>
-    
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#chota" class="w3-bar-item w3-button w3-padding-large">CHOTA</a>
+    <a href="#cajamarca" class="w3-bar-item w3-button w3-padding-large">CAJAMARCA</a>
+    <a href="#celendin" class="w3-bar-item w3-button w3-padding-large">CELENDIN</a>
+    <a href="#cutervo" class="w3-bar-item w3-button w3-padding-large">CUTERVO</a>
+    <a href="#jaen" class="w3-bar-item w3-button w3-padding-large">JAEN</a>
+   
   </div>
-</nav>
+</div>
+
+   
+ 
 
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -381,41 +397,6 @@
   <!-- End page content -->
 </div>
 
-<script>
-// Get the Sidebar
-var mySidebar = document.getElementById("mySidebar");
-
-// Get the DIV with overlay effect
-var overlayBg = document.getElementById("myOverlay");
-
-// Toggle between showing and hiding the sidebar, and add overlay effect
-function w3_open() {
-    if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
-        overlayBg.style.display = "none";
-    } else {
-        mySidebar.style.display = 'block';
-        overlayBg.style.display = "block";
-    }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-    overlayBg.style.display = "none";
-}
-</script>
-
-<script>
-function myFunction(id) {
-    var x = document.getElementById(id);
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else { 
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
