@@ -13,3 +13,14 @@ function myMap() {
 	  infowindow.open(map,marker);
 	}
 
+function pageload() {
+	var inicio = document.getElementById("img1");
+	inicio.onclick = onClick;
+}
+function onClick(element) {
+	  document.getElementById("img01").src = element.src;
+	  document.getElementById("modal01").style.display = "block";
+	  var captionText = document.getElementById("caption");
+	  captionText.innerHTML = element.alt;
+	}
+window.onload = pageload;
