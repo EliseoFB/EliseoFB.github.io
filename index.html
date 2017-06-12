@@ -490,51 +490,72 @@
 		<div class="w3-row-padding w3-center">
 			<div class="w3-col m3">
 				<img src="/img/cajsaturistico1.jpg" 
-					onclick="onClick(this)" class="w3-image w3-hover-opacity" 
+					class="w3-image w3-hover-opacity" 
 					alt="Cerro Santa Apolonia">
+					<div class="w3-container">
+						<h5>Santa Apolonia</h5>
+					</div>
 			</div>
 
 			<div class="w3-col m3">
 				<img src="/img/cajsaturistico2.jpg"  
-					onclick="onClick(this)" class="w3-image w3-hover-opacity"
+					 class="w3-image w3-hover-opacity"
 					alt="Baños del Inca">
+					<div class="w3-container">
+						<h5>Baños del Inca</h5>
+					</div>
 			</div>
 
 			<div class="w3-col m3">
 				<img src="/img/cajsaturistico3.jpg" 
-					onclick="onClick(this)" class="w3-image w3-hover-opacity" 
+					class="w3-image w3-hover-opacity" 
 					alt="Ventanillas de otuzco">
+					<div class="w3-container">
+						<h5>Ventanillas Otuzco</h5>
+					</div>
 			</div>
 
 			<div class="w3-col m3">
 				<img src="/img/cajsaturistico4.jpg"   
-					onclick="onClick(this)" class="w3-image w3-hover-opacity"
+					class="w3-image w3-hover-opacity"
 					alt="Canal de Cumbemayo">
+					<div class="w3-container">
+						<h5>Cumbemayo</h5>
+					</div>
 			</div>
 		</div>
 
 		<div class="w3-row-padding w3-center w3-section">
 			<div class="w3-col m3">
 				<img src="/img/cajsaturistico5.jpg" 
-					onclick="onClick(this)" class="w3-image w3-hover-opacity" 
+					 class="w3-image w3-hover-opacity" 
 					alt="Silla del Inca">
+					<div class="w3-container">
+						<h5>Silla del inca</h5>
+					</div>
 			</div>
 
 			<div class="w3-col m3">
 				<img src="/img/cajsaturistico6.jpg"   
-					onclick="onClick(this)" class="w3-image w3-hover-opacity"
+					class="w3-image w3-hover-opacity"
 					alt="Catarata LLacanora">
+					<div class="w3-container">
+						<h5>Llacanora</h5>
+					</div>
 			</div>
 
 			<div class="w3-col m3">
 				<img src="/img/cajsaturistico7.jpg"   
-					onclick="onClick(this)" class="w3-image w3-hover-opacity"
+					 class="w3-image w3-hover-opacity"
 					alt="Granja Porcon">
+					<div class="w3-container">
+						<h5>Granja Porcon</h5>
+					</div>
 			</div>
 
 			<div class="w3-col m3">
 				<img src="/img/cajsaturistico8.jpg " 
-					onclick="onClick(this)" class="w3-image w3-hover-opacity"  
+					class="w3-image w3-hover-opacity"  
 					alt="Hacienda la Collpa">
 					<div class="w3-container">
 						<h5>La collpa</h5>
@@ -550,20 +571,6 @@
 			</div>
 		</div>
 	</div>
-
-	<!-- Modal for full size images on click-->
-	<div id="modal01" class="w3-modal w3-black"
-		onclick="this.style.display='none'">
-		<span class="w3-button w3-large w3-black w3-display-topright"
-			title="Close Modal Image"><i class="fa fa-remove"></i></span>
-		<div
-			class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-			<img id="img01" class="w3-image" alt="imagen">
-			<p id="caption" class="w3-opacity w3-large"></p>
-		</div>
-
-	</div>
-
 
 	<!-- Third Parallax Image with Portfolio Text -->
 	<div class="bgimg-3 w3-display-container w3-opacity-min">
@@ -714,15 +721,6 @@
 	</footer>
 
 	<script>
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
 
 // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
