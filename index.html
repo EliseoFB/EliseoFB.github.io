@@ -16,7 +16,7 @@
 	<!-- Navbar (sit on top) -->
 	<div class="w3-top">
 		<div class="w3-bar" id="myNavbar">
-			<a class="w3-bar-item w3-button w3-hover-white w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" 	title="Desplegar"> <i class="fa fa-bars"></i></a> 
+			<a class="w3-bar-item w3-button w3-hover-white w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" id="navegando" 	title="Desplegar"> <i class="fa fa-bars"></i></a> 
 			<a href="#Inicio" class="w3-bar-item w3-button"><i class="material-icons">home</i>INICIO</a> 
 			<a href="#historia" class="w3-bar-item w3-button w3-hide-small"><i class="material-icons">location_city</i>HISTORIA </a>
 			<a href="#lugTuristico" class="w3-bar-item w3-button w3-hide-small"><i class="material-icons">directions_bus</i>CENTROS TURISTICOS</a>
@@ -28,11 +28,11 @@
 		<!-- Navbar on small screens -->
 		<div id="navDemo"
 			class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-			<a href="#historia" class="w3-bar-item w3-button" onclick="toggleFunction()">HISTORIA</a> 
-			<a href="#lugTuristico"	class="w3-bar-item w3-button" onclick="toggleFunction()">CENTROS TURISTICOS</a> 
-			<a href="#costumbres" class="w3-bar-item w3-button" onclick="toggleFunction()">COSTUMBRES</a> 
-			<a href="/cajamarca/actividadescajamarca.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ACTIVIDADES DE CAJAMARCA</a>
-			<a href="#ubicacion" class="w3-bar-item w3-button" onclick="toggleFunction()">UBICACION</a>
+			<a href="#historia" class="w3-bar-item w3-button" >HISTORIA</a> 
+			<a href="#lugTuristico"	class="w3-bar-item w3-button">CENTROS TURISTICOS</a> 
+			<a href="#costumbres" class="w3-bar-item w3-button" >COSTUMBRES</a> 
+			<a href="/cajamarca/actividadescajamarca.html" class="w3-bar-item w3-button" >ACTIVIDADES DE CAJAMARCA</a>
+			<a href="#ubicacion" class="w3-bar-item w3-button" >UBICACION</a>
 			
 		</div>
 	</div>
@@ -720,27 +720,6 @@ function onClick(element) {
   captionText.innerHTML = element.alt;
 }
 
-
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
-    }
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
 </script>
 
 
