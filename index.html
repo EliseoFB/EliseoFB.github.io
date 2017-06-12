@@ -742,24 +742,6 @@ function toggleFunction() {
     }
 }
 </script>
-<script >
-
-<!-- Sctip de mapa de google maps  -->
-function myMap() {
-	  var myCenter = new google.maps.LatLng(-7.1637800,-78.5002700);
-	  var mapCanvas = document.getElementById("map");
-	  var mapOptions = {center: myCenter, zoom: 5};
-	  var map = new google.maps.Map(mapCanvas, mapOptions);
-	  var marker = new google.maps.Marker({position:myCenter});
-	  marker.setMap(map);
-
-	  var infowindow = new google.maps.InfoWindow({
-	    content: "Cajamarca"
-	  });
-	  infowindow.open(map,marker);
-	}
-</script>
-
 
 
 	<!-- Sctip de slideshow -->
@@ -810,7 +792,7 @@ function myMap() {
   				evt.currentTarget.classList.add("w3-light-grey");
 					}
 				</script>
-
+	<script src="/js/index.js"></script>
 	<script	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC45iE_7ge0KLvrrdlxHUt0zjLUiQKne7E&callback=myMap "></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
